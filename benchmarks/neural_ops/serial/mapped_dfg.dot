@@ -1,0 +1,18 @@
+Digraph G {
+"Input5"[label = "\N\nlat=3"];
+"Input7"[label = "\N\nlat=3"];
+"MUL8"[label = "\N\nlat=4"];
+"Input7"->"MUL8"[label = "lat=0\nop=0"];
+"Input5"->"MUL8"[label = "lat=0\nop=1"];
+"Input11"[label = "\N\nlat=3"];
+"MUL12"[label = "\N\nlat=4"];
+"Input11"->"MUL12"[label = "lat=0\nop=0"];
+"Input5"->"MUL12"[label = "lat=0\nop=1"];
+"Output32"[label = "\N\nlat=6"];
+"ACC68"->"Output32"[label = "lat=0\nop=0"];
+"ACC66"->"Output32"[label = "lat=0\nop=1"];
+"ACC66"[label = "\N\nlat=5"];
+"MUL12"->"ACC66"[label = "lat=0\nop=0"];
+"ACC68"[label = "\N\nlat=5"];
+"MUL8"->"ACC68"[label = "lat=0\nop=0"];
+}

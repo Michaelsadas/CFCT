@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/pigfly/chipyard/generators/cdnn/hardware-generator/src/main/resources/cdnn_spec_v1.json,/home/pigfly/chipyard/generators/cdnn/hardware-generator/target/scala-2.12/classes/cdnn_spec_v1.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/pigfly/chipyard/generators/cdnn/hardware-generator/src/main/resources/cgra_adg.json,/home/pigfly/chipyard/generators/cdnn/hardware-generator/target/scala-2.12/classes/cgra_adg.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/pigfly/chipyard/generators/cdnn/hardware-generator/src/main/resources/cdnn_spec.json,/home/pigfly/chipyard/generators/cdnn/hardware-generator/target/scala-2.12/classes/cdnn_spec.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/pigfly/chipyard/generators/cdnn/hardware-generator/src/main/resources/cgra_spec.json,/home/pigfly/chipyard/generators/cdnn/hardware-generator/target/scala-2.12/classes/cgra_spec.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/pigfly/chipyard/generators/cdnn/hardware-generator/src/main/resources/cgra_spec_v1.json,/home/pigfly/chipyard/generators/cdnn/hardware-generator/target/scala-2.12/classes/cgra_spec_v1.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/pigfly/chipyard/generators/cdnn/hardware-generator/src/main/resources/operations.json,/home/pigfly/chipyard/generators/cdnn/hardware-generator/target/scala-2.12/classes/operations.json)[0m

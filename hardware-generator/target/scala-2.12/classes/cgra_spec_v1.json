@@ -1,0 +1,27 @@
+{
+  "num_row" : 4,
+  "num_colum" : 4,
+  "data_width" : 32,
+  "cfg_data_width" : 32,
+  "cfg_addr_width" : 8,
+  "cfg_blk_offset" : 2,
+  "num_iob_sides" : 2,
+  "iob_mode" : 0,
+  "lg2_max_ii" : 4,
+  "lg2_max_cycles" : 10,
+  "lg2_max_lat" : 10,
+  "addr_width_sram" : 10,
+  "add_reg_sram" : false,
+  "has_mask_sram" : true,
+  "operations" : [ "PASS", "ADD", "SUB", "MUL", "AND", "OR", "XOR", "SEL" ],
+  "num_rf_reg" : 1,
+  "max_delay" : 4,
+  "num_track" : 2,
+  "track_reged_mode" : 1,
+  "diag_iopin_connect" : true,
+  "connect_flexibility" : {
+    "num_otrack_per_opin" : 2,
+    "num_itrack_per_ipin" : 2,
+    "num_ipin_per_opin" : 4
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "CONST1",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "48128"
+    },
+    {
+      "_gvid": 1,
+      "name": "CONST5",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "15360"
+    },
+    {
+      "_gvid": 2,
+      "name": "CONST6",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "16384"
+    },
+    {
+      "_gvid": 3,
+      "name": "CONST7",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "30586"
+    },
+    {
+      "_gvid": 4,
+      "name": "Input1",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 1000",
+      "ref_name": "A1",
+      "size": "2000"
+    },
+    {
+      "_gvid": 5,
+      "name": "Input2",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 1000",
+      "ref_name": "A1",
+      "size": "2000"
+    },
+    {
+      "_gvid": 6,
+      "name": "Output1",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "2, 1000",
+      "ref_name": "B1",
+      "size": "2000"
+    },
+    {
+      "_gvid": 7,
+      "name": "FMIN1",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 8,
+      "name": "I2F2",
+      "label": "\\N",
+      "opcode": "tofloat"
+    },
+    {
+      "_gvid": 9,
+      "name": "F2I2",
+      "label": "\\N",
+      "opcode": "toint"
+    },
+    {
+      "_gvid": 10,
+      "name": "MUL1",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 11,
+      "name": "MUL2",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 12,
+      "name": "MUL5",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 13,
+      "name": "MUL6",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 14,
+      "name": "MUL7",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 15,
+      "name": "SUB2",
+      "label": "\\N",
+      "opcode": "fsub"
+    },
+    {
+      "_gvid": 16,
+      "name": "SUB3",
+      "label": "\\N",
+      "opcode": "fsub"
+    },
+    {
+      "_gvid": 17,
+      "name": "ADD3",
+      "label": "\\N",
+      "opcode": "fadd"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 10,
+      "operand": "1"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 17,
+      "operand": "1"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 12,
+      "operand": "1"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 15,
+      "operand": "0"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 7,
+      "operand": "0"
+    },
+    {
+      "_gvid": 5,
+      "tail": 4,
+      "head": 10,
+      "operand": "0"
+    },
+    {
+      "_gvid": 6,
+      "tail": 5,
+      "head": 11,
+      "operand": "1"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 17,
+      "operand": "0"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 15,
+      "operand": "1"
+    },
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 12,
+      "operand": "0"
+    },
+    {
+      "_gvid": 10,
+      "tail": 9,
+      "head": 13,
+      "operand": "0"
+    },
+    {
+      "_gvid": 11,
+      "tail": 9,
+      "head": 13,
+      "operand": "1"
+    },
+    {
+      "_gvid": 12,
+      "tail": 10,
+      "head": 7,
+      "operand": "1"
+    },
+    {
+      "_gvid": 13,
+      "tail": 11,
+      "head": 6,
+      "operand": "0"
+    },
+    {
+      "_gvid": 14,
+      "tail": 12,
+      "head": 16,
+      "operand": "0"
+    },
+    {
+      "_gvid": 15,
+      "tail": 13,
+      "head": 14,
+      "operand": "0"
+    },
+    {
+      "_gvid": 16,
+      "tail": 14,
+      "head": 16,
+      "operand": "1"
+    },
+    {
+      "_gvid": 17,
+      "tail": 15,
+      "head": 9,
+      "operand": "0"
+    },
+    {
+      "_gvid": 18,
+      "tail": 16,
+      "head": 11,
+      "operand": "0"
+    },
+    {
+      "_gvid": 19,
+      "tail": 17,
+      "head": 8,
+      "operand": "0"
+    },
+    {
+      "_gvid": 20,
+      "tail": 17,
+      "head": 14,
+      "operand": "1"
+    }
+  ]
+}

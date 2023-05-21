@@ -1,0 +1,368 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "Input0",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "0, 200",
+      "ref_name": "SUM",
+      "size": "8"
+    },
+    {
+      "_gvid": 1,
+      "name": "Input1",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 200",
+      "ref_name": "B1",
+      "size": "400"
+    },
+    {
+      "_gvid": 2,
+      "name": "Input2",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 200",
+      "ref_name": "B2",
+      "size": "400"
+    },
+    {
+      "_gvid": 3,
+      "name": "Input3",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 200",
+      "ref_name": "B3",
+      "size": "400"
+    },
+    {
+      "_gvid": 4,
+      "name": "Input4",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 200",
+      "ref_name": "B4",
+      "size": "400"
+    },
+    {
+      "_gvid": 5,
+      "name": "Input5",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 200",
+      "ref_name": "B5",
+      "size": "400"
+    },
+    {
+      "_gvid": 6,
+      "name": "Output1",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "2, 200",
+      "ref_name": "R1",
+      "size": "400"
+    },
+    {
+      "_gvid": 7,
+      "name": "Output2",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "2, 200",
+      "ref_name": "R2",
+      "size": "400"
+    },
+    {
+      "_gvid": 8,
+      "name": "Output3",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "2, 200",
+      "ref_name": "R3",
+      "size": "400"
+    },
+    {
+      "_gvid": 9,
+      "name": "Output4",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "2, 200",
+      "ref_name": "R4",
+      "size": "400"
+    },
+    {
+      "_gvid": 10,
+      "name": "Output5",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "2, 200",
+      "ref_name": "R4",
+      "size": "400"
+    },
+    {
+      "_gvid": 11,
+      "name": "CONST1",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "16384"
+    },
+    {
+      "_gvid": 12,
+      "name": "CONST2",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "30586"
+    },
+    {
+      "_gvid": 13,
+      "name": "I2F1",
+      "label": "\\N",
+      "opcode": "tofloat"
+    },
+    {
+      "_gvid": 14,
+      "name": "F2I1",
+      "label": "\\N",
+      "opcode": "toint"
+    },
+    {
+      "_gvid": 15,
+      "name": "MUL2",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 16,
+      "name": "MUL3",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 17,
+      "name": "MUL4",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 18,
+      "name": "MUL5",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 19,
+      "name": "MUL6",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 20,
+      "name": "MUL7",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 21,
+      "name": "MUL8",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 22,
+      "name": "MUL9",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 23,
+      "name": "SUB1",
+      "label": "\\N",
+      "opcode": "fsub"
+    },
+    {
+      "_gvid": 24,
+      "name": "SUB2",
+      "label": "\\N",
+      "opcode": "fsub"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 13,
+      "operand": "0"
+    },
+    {
+      "_gvid": 1,
+      "tail": 0,
+      "head": 17,
+      "operand": "1"
+    },
+    {
+      "_gvid": 2,
+      "tail": 1,
+      "head": 18,
+      "operand": "1"
+    },
+    {
+      "_gvid": 3,
+      "tail": 2,
+      "head": 19,
+      "operand": "1"
+    },
+    {
+      "_gvid": 4,
+      "tail": 3,
+      "head": 20,
+      "operand": "1"
+    },
+    {
+      "_gvid": 5,
+      "tail": 4,
+      "head": 21,
+      "operand": "1"
+    },
+    {
+      "_gvid": 6,
+      "tail": 5,
+      "head": 22,
+      "operand": "1"
+    },
+    {
+      "_gvid": 7,
+      "tail": 11,
+      "head": 15,
+      "operand": "1"
+    },
+    {
+      "_gvid": 8,
+      "tail": 12,
+      "head": 23,
+      "operand": "0"
+    },
+    {
+      "_gvid": 9,
+      "tail": 13,
+      "head": 23,
+      "operand": "1"
+    },
+    {
+      "_gvid": 10,
+      "tail": 14,
+      "head": 15,
+      "operand": "0"
+    },
+    {
+      "_gvid": 11,
+      "tail": 14,
+      "head": 16,
+      "operand": "0"
+    },
+    {
+      "_gvid": 12,
+      "tail": 14,
+      "head": 16,
+      "operand": "1"
+    },
+    {
+      "_gvid": 13,
+      "tail": 15,
+      "head": 24,
+      "operand": "0"
+    },
+    {
+      "_gvid": 14,
+      "tail": 16,
+      "head": 17,
+      "operand": "0"
+    },
+    {
+      "_gvid": 15,
+      "tail": 17,
+      "head": 24,
+      "operand": "1"
+    },
+    {
+      "_gvid": 16,
+      "tail": 18,
+      "head": 6,
+      "operand": "0"
+    },
+    {
+      "_gvid": 17,
+      "tail": 19,
+      "head": 7,
+      "operand": "0"
+    },
+    {
+      "_gvid": 18,
+      "tail": 20,
+      "head": 8,
+      "operand": "0"
+    },
+    {
+      "_gvid": 19,
+      "tail": 21,
+      "head": 9,
+      "operand": "0"
+    },
+    {
+      "_gvid": 20,
+      "tail": 22,
+      "head": 10,
+      "operand": "0"
+    },
+    {
+      "_gvid": 21,
+      "tail": 23,
+      "head": 14,
+      "operand": "0"
+    },
+    {
+      "_gvid": 22,
+      "tail": 24,
+      "head": 18,
+      "operand": "0"
+    },
+    {
+      "_gvid": 23,
+      "tail": 24,
+      "head": 19,
+      "operand": "0"
+    },
+    {
+      "_gvid": 24,
+      "tail": 24,
+      "head": 20,
+      "operand": "0"
+    },
+    {
+      "_gvid": 25,
+      "tail": 24,
+      "head": 21,
+      "operand": "0"
+    },
+    {
+      "_gvid": 26,
+      "tail": 24,
+      "head": 22,
+      "operand": "0"
+    }
+  ]
+}

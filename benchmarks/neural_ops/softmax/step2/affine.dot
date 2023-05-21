@@ -1,0 +1,54 @@
+Digraph G {
+Input0[opcode=input, ref_name="SUM", size=8, offset="0, 0", pattern="0, 200"];
+Input1[opcode=input, ref_name="B1", size=400, offset="0, 0", pattern="2, 200"];
+Input2[opcode=input, ref_name="B2", size=400, offset="0, 0", pattern="2, 200"];
+Input3[opcode=input, ref_name="B3", size=400, offset="0, 0", pattern="2, 200"];
+Input4[opcode=input, ref_name="B4", size=400, offset="0, 0", pattern="2, 200"];
+Input5[opcode=input, ref_name="B5", size=400, offset="0, 0", pattern="2, 200"];
+Output1[opcode=output, ref_name="R1", size=400, offset="0, 0", pattern="2, 200"];
+Output2[opcode=output, ref_name="R2", size=400, offset="0, 0", pattern="2, 200"];
+Output3[opcode=output, ref_name="R3", size=400, offset="0, 0", pattern="2, 200"];
+Output4[opcode=output, ref_name="R4", size=400, offset="0, 0", pattern="2, 200"];
+Output5[opcode=output, ref_name="R4", size=400, offset="0, 0", pattern="2, 200"];
+CONST1[opcode=const, value=16384]; #2.0
+CONST2[opcode=const, value=30586]; #magic number
+I2F1[opcode=tofloat];
+F2I1[opcode=toint];
+MUL2[opcode=fmul];
+MUL3[opcode=fmul];
+MUL4[opcode=fmul];
+MUL5[opcode=fmul];
+MUL6[opcode=fmul];
+MUL7[opcode=fmul];
+MUL8[opcode=fmul];
+MUL9[opcode=fmul];
+SUB1[opcode=fsub];
+SUB2[opcode=fsub];
+Input0->I2F1[operand=0];
+I2F1->SUB1[operand=1];
+CONST2->SUB1[operand=0];
+SUB1->F2I1[operand=0];
+F2I1->MUL2[operand=0];
+CONST1->MUL2[operand=1];
+F2I1->MUL3[operand=0];
+F2I1->MUL3[operand=1];
+MUL3->MUL4[operand=0];
+Input0->MUL4[operand=1];
+MUL2->SUB2[operand=0];
+MUL4->SUB2[operand=1];
+SUB2->MUL5[operand=0];
+Input1->MUL5[operand=1];
+SUB2->MUL6[operand=0];
+Input2->MUL6[operand=1];
+SUB2->MUL7[operand=0];
+Input3->MUL7[operand=1];
+SUB2->MUL8[operand=0];
+Input4->MUL8[operand=1];
+SUB2->MUL9[operand=0];
+Input5->MUL9[operand=1];
+MUL5->Output1[operand=0];
+MUL6->Output2[operand=0];
+MUL7->Output3[operand=0];
+MUL8->Output4[operand=0];
+MUL9->Output5[operand=0];
+}

@@ -1,0 +1,13 @@
+Digraph G {
+"Input1"[label = "\N\nlat=3"];
+"Output1"[label = "\N\nlat=13"];
+"MUL1"->"Output1"[label = "lat=1\delay=0\nop=0"];
+"MAX1"[label = "\N\nlat=4"];
+"Input1"->"MAX1"[label = "lat=0\delay=0\nop=0"];
+"MIN1"[label = "\N\nlat=5"];
+"MAX1"->"MIN1"[label = "lat=0\delay=0\nop=0"];
+"MUL1"[label = "\N\nlat=11"];
+"ADD1"->"MUL1"[label = "lat=0\delay=0\nop=0"];
+"ADD1"[label = "\N\nlat=8"];
+"MIN1"->"ADD1"[label = "lat=0\delay=0\nop=0"];
+}

@@ -1,0 +1,18 @@
+Digraph G {
+Input5[opcode=input, ref_name="A0", size=5202, offset="0, 0", pattern="2, 11, 82, 11, -1032, 11, -712, 11"];
+Input7[opcode=input, ref_name="W00", size=242, offset="0, 0", pattern="2, 11, 2, 11, -240, 11, -240, 11"];
+MUL8[opcode=mul];
+Input11[opcode=input, ref_name="W10", size=242, offset="0, 0", pattern="2, 11, 2, 11, -240, 11, -240, 11"];
+MUL12[opcode=mul];
+Output32[opcode=sstore, ref_name="B0", size=484, offset="0, 0", pattern="242, 2, -240, 121", serial="2, 121, 2, 1"];
+ACC66[opcode=acc, acc_params="0, 121, 1, 121", acc_first=1];
+ACC68[opcode=acc, acc_params="0, 121, 1, 121", acc_first=1];
+Input5->MUL12[operand=1];
+Input5->MUL8[operand=1];
+Input7->MUL8[operand=0];
+Input11->MUL12[operand=0];
+MUL12->ACC66[operand=0];
+ACC66->Output32[operand=1];
+MUL8->ACC68[operand=0];
+ACC68->Output32[operand=0];
+}

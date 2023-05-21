@@ -1,0 +1,43 @@
+Digraph G {
+Input3[opcode=input, ref_name="A0", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+Input5[opcode=input, ref_name="A1", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+Input7[opcode=input, ref_name="A2", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+Input9[opcode=input, ref_name="A3", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+Input11[opcode=input, ref_name="A4", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+Input13[opcode=input, ref_name="A5", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+Input15[opcode=input, ref_name="A6", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+Input17[opcode=input, ref_name="A7", size=6050, offset="0, 0", pattern="2, 55, 2, 55"];
+MUL1[opcode=fmul];
+MUL2[opcode=fmul];
+ADD18[opcode=fadd];
+ADD19[opcode=fadd];
+ADD20[opcode=fadd];
+ADD21[opcode=fadd];
+ADD22[opcode=fadd];
+ADD23[opcode=fadd];
+ADD24[opcode=fadd];
+CONST1[opcode=const, value=12288]; #0.125
+CONST2[opcode=const, value=3434]; #1 / 55 * 55
+Output34[opcode=output, ref_name="Mean", size=8, offset="0, 0", pattern="0, 55, 0, 55"];
+ACC81[opcode=facc, acc_params="0, 3025, 1, 1", acc_first=1];
+Input3->ADD18[operand=0];
+Input5->ADD19[operand=1];
+Input7->ADD20[operand=1];
+Input9->ADD21[operand=1];
+Input11->ADD22[operand=1];
+Input13->ADD23[operand=1];
+Input15->ADD24[operand=1];
+ADD18->ADD19[operand=0];
+ADD19->ADD20[operand=0];
+ADD20->ADD21[operand=0];
+ADD21->ADD22[operand=0];
+ADD22->ADD23[operand=0];
+ADD23->ADD24[operand=0];
+Input17->ADD18[operand=1];
+ADD24->ACC81[operand=0];
+ACC81->MUL1[operand=0];
+CONST1->MUL1[operand=1];
+CONST2->MUL2[operand=0];
+MUL1->MUL2[operand=1];
+MUL2->Output34[operand=0];
+}

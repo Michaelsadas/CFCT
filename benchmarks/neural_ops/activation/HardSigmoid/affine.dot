@@ -1,0 +1,20 @@
+Digraph G {
+CONST1[opcode=const, value=49664]; #-3.0
+CONST2[opcode=const, value=16896]; #3.0
+CONST3[opcode=const, value=12629]; #1.0 / 6.0
+Input1[opcode=input, ref_name="A1", size=2000, offset="0, 0", pattern="2, 1000"];
+Output1[opcode=output, ref_name="B1", size=2000, offset="0, 0", pattern="2, 1000"];
+MAX1[opcode=fmax];
+MIN1[opcode=fmin];
+MUL1[opcode=fmul];
+ADD1[opcode=fadd];
+Input1->MAX1[operand=0];
+CONST1->MAX1[operand=1];
+MAX1->MIN1[operand=0];
+CONST2->MIN1[operand=1];
+MIN1->ADD1[operand=0];
+CONST2->ADD1[operan=1];
+ADD1->MUL1[operand=0];
+CONST3->MUL1[operand=1];
+MUL1->Output1[operand=0];
+}

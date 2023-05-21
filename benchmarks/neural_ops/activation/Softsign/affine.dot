@@ -1,0 +1,42 @@
+Digraph G {
+CONST1[opcode=const, value=48128]; #-1.000
+CONST5[opcode=const, value=15360]; #1.0000
+CONST6[opcode=const, value=16384]; #2.0
+CONST7[opcode=const, value=30586]; #magic number
+Input1[opcode=input, ref_name="A1", size=2000, offset="0, 0", pattern="2, 1000"];
+Input2[opcode=input, ref_name="A1", size=2000, offset="0, 0", pattern="2, 1000"];
+Output1[opcode=output, ref_name="B1", size=2000, offset="0, 0", pattern="2, 1000"];
+
+FMIN1[opcode=fmax];
+I2F2[opcode=tofloat];
+F2I2[opcode=toint];
+MUL1[opcode=fmul];
+MUL2[opcode=fmul];
+MUL5[opcode=fmul];
+MUL6[opcode=fmul];
+MUL7[opcode=fmul];
+SUB2[opcode=fsub];
+SUB3[opcode=fsub];
+ADD3[opcode=fadd];
+Input1->MUL1[operand=0];
+CONST1->MUL1[operand=1];
+Input1->FMIN1[operand=0];
+MUL1->FMIN1[operand=1];
+FMIN1->ADD3[operand=0];
+CONST5->ADD3[operand=1];
+ADD3->I2F2[operand=0];
+I2F2->SUB2[operand=1];
+CONST7->SUB2[operand=0];
+SUB2->F2I2[operand=0];
+F2I2->MUL5[operand=0];
+CONST6->MUL5[operand=1];
+F2I2->MUL6[operand=0];
+F2I2->MUL6[operand=1];
+MUL6->MUL7[operand=0];
+ADD3->MUL7[operand=1];
+MUL7->SUB3[operand=1];
+MUL5->SUB3[operand=0];
+SUB3->MUL2[operand=0];
+Input2->MUL2[operand=1];
+MUL2->Output1[operand=0];
+}

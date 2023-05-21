@@ -1,0 +1,620 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "Input10",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A0",
+      "size": "4104"
+    },
+    {
+      "_gvid": 1,
+      "name": "Input11",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A1",
+      "size": "4104"
+    },
+    {
+      "_gvid": 2,
+      "name": "Input12",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A2",
+      "size": "4104"
+    },
+    {
+      "_gvid": 3,
+      "name": "Input13",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A3",
+      "size": "4104"
+    },
+    {
+      "_gvid": 4,
+      "name": "Input14",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A4",
+      "size": "4104"
+    },
+    {
+      "_gvid": 5,
+      "name": "Input15",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A5",
+      "size": "4104"
+    },
+    {
+      "_gvid": 6,
+      "name": "Input16",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A6",
+      "size": "4104"
+    },
+    {
+      "_gvid": 7,
+      "name": "Input17",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A7",
+      "size": "4104"
+    },
+    {
+      "_gvid": 8,
+      "name": "Input18",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A8",
+      "size": "4104"
+    },
+    {
+      "_gvid": 9,
+      "name": "Input19",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A9",
+      "size": "4104"
+    },
+    {
+      "_gvid": 10,
+      "name": "Input20",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A10",
+      "size": "4104"
+    },
+    {
+      "_gvid": 11,
+      "name": "Input21",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A11",
+      "size": "4104"
+    },
+    {
+      "_gvid": 12,
+      "name": "Input22",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A12",
+      "size": "4104"
+    },
+    {
+      "_gvid": 13,
+      "name": "Input23",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 224, 3, -458, 112, -454, 16",
+      "ref_name": "A13",
+      "size": "4104"
+    },
+    {
+      "_gvid": 14,
+      "name": "Input30",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 2, 3, -16, 112, -16, 16",
+      "ref_name": "W0",
+      "size": "18"
+    },
+    {
+      "_gvid": 15,
+      "name": "Input31",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 3, 2, 3, -16, 112, -16, 16",
+      "ref_name": "W1",
+      "size": "18"
+    },
+    {
+      "_gvid": 16,
+      "name": "MAC0",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 17,
+      "name": "MAC1",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 18,
+      "name": "MAC2",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 19,
+      "name": "MAC3",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 20,
+      "name": "MAC4",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 21,
+      "name": "MAC5",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 22,
+      "name": "MAC6",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 23,
+      "name": "MAC7",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 24,
+      "name": "MAC8",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 25,
+      "name": "MAC9",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 26,
+      "name": "MAC10",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 27,
+      "name": "MAC11",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 28,
+      "name": "MAC12",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 29,
+      "name": "MAC13",
+      "acc_first": "1",
+      "acc_params": "0, 9, 1, 1792",
+      "label": "\\N",
+      "opcode": "mac"
+    },
+    {
+      "_gvid": 30,
+      "name": "Sstore60",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "sstore",
+      "pattern": "3584, 2, -3582, 1792",
+      "ref_name": "B0",
+      "serial": "0, 9, 2, 0",
+      "size": "7168"
+    },
+    {
+      "_gvid": 31,
+      "name": "Sstore61",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "sstore",
+      "pattern": "3584, 2, -3582, 1792",
+      "ref_name": "B0",
+      "serial": "0, 9, 2, 0",
+      "size": "7168"
+    },
+    {
+      "_gvid": 32,
+      "name": "Sstore62",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "sstore",
+      "pattern": "3584, 2, -3582, 1792",
+      "ref_name": "B0",
+      "serial": "0, 9, 2, 0",
+      "size": "7168"
+    },
+    {
+      "_gvid": 33,
+      "name": "Output63",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 0, 3, 2, 112, 2, 16",
+      "ref_name": "B0",
+      "size": "3584"
+    },
+    {
+      "_gvid": 34,
+      "name": "Sstore64",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "sstore",
+      "pattern": "3584, 2, -3582, 1792",
+      "ref_name": "B0",
+      "serial": "0, 9, 2, 0",
+      "size": "7168"
+    },
+    {
+      "_gvid": 35,
+      "name": "Sstore65",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "sstore",
+      "pattern": "3584, 2, -3582, 1792",
+      "ref_name": "B0",
+      "serial": "0, 9, 2, 0",
+      "size": "7168"
+    },
+    {
+      "_gvid": 36,
+      "name": "Sstore66",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "sstore",
+      "pattern": "3584, 2, -3582, 1792",
+      "ref_name": "B0",
+      "serial": "0, 9, 2, 0",
+      "size": "7168"
+    },
+    {
+      "_gvid": 37,
+      "name": "Output67",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 0, 3, 2, 112, 2, 16",
+      "ref_name": "B0",
+      "size": "3584"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 16,
+      "operand": "0"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 17,
+      "operand": "0"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 18,
+      "operand": "0"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 19,
+      "operand": "0"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 20,
+      "operand": "0"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 21,
+      "operand": "0"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 22,
+      "operand": "0"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 23,
+      "operand": "0"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 24,
+      "operand": "0"
+    },
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 25,
+      "operand": "0"
+    },
+    {
+      "_gvid": 10,
+      "tail": 10,
+      "head": 26,
+      "operand": "0"
+    },
+    {
+      "_gvid": 11,
+      "tail": 11,
+      "head": 27,
+      "operand": "0"
+    },
+    {
+      "_gvid": 12,
+      "tail": 12,
+      "head": 28,
+      "operand": "0"
+    },
+    {
+      "_gvid": 13,
+      "tail": 13,
+      "head": 29,
+      "operand": "0"
+    },
+    {
+      "_gvid": 14,
+      "tail": 14,
+      "head": 16,
+      "operand": "1"
+    },
+    {
+      "_gvid": 15,
+      "tail": 14,
+      "head": 17,
+      "operand": "1"
+    },
+    {
+      "_gvid": 16,
+      "tail": 14,
+      "head": 18,
+      "operand": "1"
+    },
+    {
+      "_gvid": 17,
+      "tail": 14,
+      "head": 19,
+      "operand": "1"
+    },
+    {
+      "_gvid": 18,
+      "tail": 14,
+      "head": 20,
+      "operand": "1"
+    },
+    {
+      "_gvid": 19,
+      "tail": 14,
+      "head": 21,
+      "operand": "1"
+    },
+    {
+      "_gvid": 20,
+      "tail": 14,
+      "head": 22,
+      "operand": "1"
+    },
+    {
+      "_gvid": 21,
+      "tail": 15,
+      "head": 23,
+      "operand": "1"
+    },
+    {
+      "_gvid": 22,
+      "tail": 15,
+      "head": 24,
+      "operand": "1"
+    },
+    {
+      "_gvid": 23,
+      "tail": 15,
+      "head": 25,
+      "operand": "1"
+    },
+    {
+      "_gvid": 24,
+      "tail": 15,
+      "head": 26,
+      "operand": "1"
+    },
+    {
+      "_gvid": 25,
+      "tail": 15,
+      "head": 27,
+      "operand": "1"
+    },
+    {
+      "_gvid": 26,
+      "tail": 15,
+      "head": 28,
+      "operand": "1"
+    },
+    {
+      "_gvid": 27,
+      "tail": 15,
+      "head": 29,
+      "operand": "1"
+    },
+    {
+      "_gvid": 28,
+      "tail": 16,
+      "head": 30,
+      "operand": "0"
+    },
+    {
+      "_gvid": 29,
+      "tail": 17,
+      "head": 30,
+      "operand": "1"
+    },
+    {
+      "_gvid": 30,
+      "tail": 18,
+      "head": 31,
+      "operand": "0"
+    },
+    {
+      "_gvid": 31,
+      "tail": 19,
+      "head": 31,
+      "operand": "1"
+    },
+    {
+      "_gvid": 32,
+      "tail": 20,
+      "head": 32,
+      "operand": "0"
+    },
+    {
+      "_gvid": 33,
+      "tail": 21,
+      "head": 32,
+      "operand": "1"
+    },
+    {
+      "_gvid": 34,
+      "tail": 22,
+      "head": 33,
+      "operand": "0"
+    },
+    {
+      "_gvid": 35,
+      "tail": 23,
+      "head": 34,
+      "operand": "0"
+    },
+    {
+      "_gvid": 36,
+      "tail": 24,
+      "head": 34,
+      "operand": "1"
+    },
+    {
+      "_gvid": 37,
+      "tail": 25,
+      "head": 35,
+      "operand": "0"
+    },
+    {
+      "_gvid": 38,
+      "tail": 26,
+      "head": 35,
+      "operand": "1"
+    },
+    {
+      "_gvid": 39,
+      "tail": 27,
+      "head": 36,
+      "operand": "0"
+    },
+    {
+      "_gvid": 40,
+      "tail": 28,
+      "head": 36,
+      "operand": "1"
+    },
+    {
+      "_gvid": 41,
+      "tail": 29,
+      "head": 37,
+      "operand": "0"
+    }
+  ]
+}

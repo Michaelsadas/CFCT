@@ -1,0 +1,70 @@
+Digraph G {
+CONST1[opcode=const, value=16837]; #-2.0 * 1.442383
+CONST2[opcode=const, value=13693]; #0.841309
+CONST3[opcode=const, value=14655]; #0.856445
+CONST4[opcode=const, value=15363]; #1.008789
+CONST5[opcode=const, value=15360]; #1.0000
+CONST6[opcode=const, value=16384]; #2.0
+CONST7[opcode=const, value=30586]; #magic number
+CONST8[opcode=const, value=49152]; #-2.0
+Input1[opcode=input, ref_name="A1", size=2000, offset="0, 0", pattern="2, 1000"];
+Output1[opcode=output, ref_name="B1", size=2000, offset="0, 0", pattern="2, 1000"];
+MUL0[opcode=fmul];
+MUL1[opcode=fmul];
+MUL2[opcode=fmul];
+MUL3[opcode=fmul];
+MUL4[opcode=fmul];
+F2I1[opcode=toint];
+I2F1[opcode=tofloat];
+SUB1[opcode=fsub];
+ADD0[opcode=fadd];
+ADD1[opcode=fadd];
+ADD2[opcode=fadd];
+ADD3[opcode=fadd];
+SHL1[opcode=fshl];
+Input1->MUL1[operand=0];
+CONST1->MUL1[operand=1];
+MUL1->F2I1[operand=0];
+F2I1->I2F1[operand=0];
+I2F1->SUB1[operand=1];
+MUL1->SUB1[operand=0];
+SUB1->MUL2[operand=0];
+CONST2->MUL2[operand=1];
+MUL2->MUL3[operand=0];
+SUB1->MUL3[operand=1];
+SUB1->MUL4[operand=0];
+CONST3->MUL4[operand=1];
+MUL3->ADD1[operand=0];
+MUL4->ADD1[operand=1];
+ADD1->ADD2[operand=0];
+CONST4->ADD2[operand=1];
+ADD2->SHL1[operand=0];
+F2I1->SHL1[operand=1];
+SHL1->ADD3[opcode=0];
+CONST5->ADD3[opcode=1];
+
+I2F2[opcode=tofloat];
+F2I2[opcode=toint];
+MUL5[opcode=fmul];
+MUL6[opcode=fmul];
+MUL7[opcode=fmul];
+SUB2[opcode=fsub];
+SUB3[opcode=fsub];
+ADD3->I2F2[operand=0];
+I2F2->SUB2[operand=1];
+CONST7->SUB2[operand=0];
+SUB2->F2I2[operand=0];
+F2I2->MUL5[operand=0];
+CONST6->MUL5[operand=1];
+F2I2->MUL6[operand=0];
+F2I2->MUL6[operand=1];
+MUL6->MUL7[operand=0];
+ADD3->MUL7[operand=1];
+MUL7->SUB3[operand=1];
+MUL5->SUB3[operand=0];
+SUB3->MUL0[operand=0];
+CONST8->MUL0[operand=1];
+MUL0->ADD0[operand=0];
+CONST5->ADD0[operand=1];
+ADD0->Output1[operand=0];
+}

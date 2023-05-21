@@ -1,0 +1,428 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "CONST1",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "16837"
+    },
+    {
+      "_gvid": 1,
+      "name": "CONST2",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "13693"
+    },
+    {
+      "_gvid": 2,
+      "name": "CONST3",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "14655"
+    },
+    {
+      "_gvid": 3,
+      "name": "CONST4",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "15363"
+    },
+    {
+      "_gvid": 4,
+      "name": "CONST5",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "15360"
+    },
+    {
+      "_gvid": 5,
+      "name": "CONST6",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "16384"
+    },
+    {
+      "_gvid": 6,
+      "name": "CONST7",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "30586"
+    },
+    {
+      "_gvid": 7,
+      "name": "CONST8",
+      "label": "\\N",
+      "opcode": "const",
+      "value": "49152"
+    },
+    {
+      "_gvid": 8,
+      "name": "Input1",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 1000",
+      "ref_name": "A1",
+      "size": "2000"
+    },
+    {
+      "_gvid": 9,
+      "name": "Output1",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "2, 1000",
+      "ref_name": "B1",
+      "size": "2000"
+    },
+    {
+      "_gvid": 10,
+      "name": "MUL0",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 11,
+      "name": "MUL1",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 12,
+      "name": "MUL2",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 13,
+      "name": "MUL3",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 14,
+      "name": "MUL4",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 15,
+      "name": "F2I1",
+      "label": "\\N",
+      "opcode": "toint"
+    },
+    {
+      "_gvid": 16,
+      "name": "I2F1",
+      "label": "\\N",
+      "opcode": "tofloat"
+    },
+    {
+      "_gvid": 17,
+      "name": "SUB1",
+      "label": "\\N",
+      "opcode": "fsub"
+    },
+    {
+      "_gvid": 18,
+      "name": "ADD0",
+      "label": "\\N",
+      "opcode": "fadd"
+    },
+    {
+      "_gvid": 19,
+      "name": "ADD1",
+      "label": "\\N",
+      "opcode": "fadd"
+    },
+    {
+      "_gvid": 20,
+      "name": "ADD2",
+      "label": "\\N",
+      "opcode": "fadd"
+    },
+    {
+      "_gvid": 21,
+      "name": "ADD3",
+      "label": "\\N",
+      "opcode": "fadd"
+    },
+    {
+      "_gvid": 22,
+      "name": "SHL1",
+      "label": "\\N",
+      "opcode": "fshl"
+    },
+    {
+      "_gvid": 23,
+      "name": "I2F2",
+      "label": "\\N",
+      "opcode": "tofloat"
+    },
+    {
+      "_gvid": 24,
+      "name": "F2I2",
+      "label": "\\N",
+      "opcode": "toint"
+    },
+    {
+      "_gvid": 25,
+      "name": "MUL5",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 26,
+      "name": "MUL6",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 27,
+      "name": "MUL7",
+      "label": "\\N",
+      "opcode": "fmul"
+    },
+    {
+      "_gvid": 28,
+      "name": "SUB2",
+      "label": "\\N",
+      "opcode": "fsub"
+    },
+    {
+      "_gvid": 29,
+      "name": "SUB3",
+      "label": "\\N",
+      "opcode": "fsub"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 11,
+      "operand": "1"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 12,
+      "operand": "1"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 14,
+      "operand": "1"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 20,
+      "operand": "1"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 18,
+      "operand": "1"
+    },
+    {
+      "_gvid": 5,
+      "tail": 4,
+      "head": 21,
+      "opcode": "1"
+    },
+    {
+      "_gvid": 6,
+      "tail": 5,
+      "head": 25,
+      "operand": "1"
+    },
+    {
+      "_gvid": 7,
+      "tail": 6,
+      "head": 28,
+      "operand": "0"
+    },
+    {
+      "_gvid": 8,
+      "tail": 7,
+      "head": 10,
+      "operand": "1"
+    },
+    {
+      "_gvid": 9,
+      "tail": 8,
+      "head": 11,
+      "operand": "0"
+    },
+    {
+      "_gvid": 10,
+      "tail": 10,
+      "head": 18,
+      "operand": "0"
+    },
+    {
+      "_gvid": 11,
+      "tail": 11,
+      "head": 15,
+      "operand": "0"
+    },
+    {
+      "_gvid": 12,
+      "tail": 11,
+      "head": 17,
+      "operand": "0"
+    },
+    {
+      "_gvid": 13,
+      "tail": 12,
+      "head": 13,
+      "operand": "0"
+    },
+    {
+      "_gvid": 14,
+      "tail": 13,
+      "head": 19,
+      "operand": "0"
+    },
+    {
+      "_gvid": 15,
+      "tail": 14,
+      "head": 19,
+      "operand": "1"
+    },
+    {
+      "_gvid": 16,
+      "tail": 15,
+      "head": 16,
+      "operand": "0"
+    },
+    {
+      "_gvid": 17,
+      "tail": 15,
+      "head": 22,
+      "operand": "1"
+    },
+    {
+      "_gvid": 18,
+      "tail": 16,
+      "head": 17,
+      "operand": "1"
+    },
+    {
+      "_gvid": 19,
+      "tail": 17,
+      "head": 12,
+      "operand": "0"
+    },
+    {
+      "_gvid": 20,
+      "tail": 17,
+      "head": 13,
+      "operand": "1"
+    },
+    {
+      "_gvid": 21,
+      "tail": 17,
+      "head": 14,
+      "operand": "0"
+    },
+    {
+      "_gvid": 22,
+      "tail": 18,
+      "head": 9,
+      "operand": "0"
+    },
+    {
+      "_gvid": 23,
+      "tail": 19,
+      "head": 20,
+      "operand": "0"
+    },
+    {
+      "_gvid": 24,
+      "tail": 20,
+      "head": 22,
+      "operand": "0"
+    },
+    {
+      "_gvid": 25,
+      "tail": 21,
+      "head": 23,
+      "operand": "0"
+    },
+    {
+      "_gvid": 26,
+      "tail": 21,
+      "head": 27,
+      "operand": "1"
+    },
+    {
+      "_gvid": 27,
+      "tail": 22,
+      "head": 21,
+      "opcode": "0"
+    },
+    {
+      "_gvid": 28,
+      "tail": 23,
+      "head": 28,
+      "operand": "1"
+    },
+    {
+      "_gvid": 29,
+      "tail": 24,
+      "head": 25,
+      "operand": "0"
+    },
+    {
+      "_gvid": 30,
+      "tail": 24,
+      "head": 26,
+      "operand": "0"
+    },
+    {
+      "_gvid": 31,
+      "tail": 24,
+      "head": 26,
+      "operand": "1"
+    },
+    {
+      "_gvid": 32,
+      "tail": 25,
+      "head": 29,
+      "operand": "0"
+    },
+    {
+      "_gvid": 33,
+      "tail": 26,
+      "head": 27,
+      "operand": "0"
+    },
+    {
+      "_gvid": 34,
+      "tail": 27,
+      "head": 29,
+      "operand": "1"
+    },
+    {
+      "_gvid": 35,
+      "tail": 28,
+      "head": 24,
+      "operand": "0"
+    },
+    {
+      "_gvid": 36,
+      "tail": 29,
+      "head": 10,
+      "operand": "0"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Digraph G {
+CONST1[opcode=const, value=0]; #0.0
+Input1[opcode=input, ref_name="A1", size=2000, offset="0, 0", pattern="2, 1000"];
+Output1[opcode=output, ref_name="B1", size=2000, offset="0, 0", pattern="2, 1000"];
+MAX1[opcode=fmax];
+Input1->MAX1[operand=0];
+CONST1->MAX1[operand=1];
+MAX1->Output1[operand=0];
+}

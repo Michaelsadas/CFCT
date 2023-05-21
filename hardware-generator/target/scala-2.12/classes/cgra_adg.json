@@ -1,0 +1,1716 @@
+{
+  "connection_format" : [ "src_id", "src_type", "src_out_idx", "dst_id", "dst_type", "dst_in_idx" ],
+  "num_row" : 2,
+  "min_blk_cfg_bits" : 1,
+  "cfg_data_width" : 32,
+  "cfg_spad_data_width" : 64,
+  "num_output" : 4,
+  "cfg_addr_width" : 11,
+  "iob_spad_bank_size" : 8192,
+  "data_width" : 16,
+  "iob_mode_names" : {
+    "0" : "FIFO_MODE",
+    "1" : "SRAM_MODE"
+  },
+  "num_colum" : 2,
+  "cfg_spad_size" : 4096,
+  "sub_modules" : [ {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 12,
+      "data_width" : 16,
+      "configuration" : {
+        "1" : [ "Muxn", 0, 0 ],
+        "0" : [ "This", 0, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 8,
+      "track_reged" : false,
+      "connections" : {
+        "0" : [ 0, "This", 3, 0, "This", 6 ],
+        "5" : [ 0, "This", 6, 0, "This", 11 ],
+        "10" : [ 0, "This", 1, 1, "Muxn", 1 ],
+        "1" : [ 0, "This", 3, 0, "This", 7 ],
+        "6" : [ 0, "This", 4, 0, "This", 0 ],
+        "9" : [ 0, "This", 6, 1, "Muxn", 0 ],
+        "13" : [ 0, "This", 2, 0, "This", 5 ],
+        "2" : [ 0, "This", 4, 0, "This", 8 ],
+        "12" : [ 0, "This", 0, 0, "This", 4 ],
+        "7" : [ 0, "This", 3, 0, "This", 1 ],
+        "3" : [ 0, "This", 5, 0, "This", 9 ],
+        "11" : [ 1, "Muxn", 0, 0, "This", 3 ],
+        "8" : [ 0, "This", 5, 0, "This", 2 ],
+        "4" : [ 0, "This", 6, 0, "This", 10 ]
+      },
+      "cfg_blk_index" : 4,
+      "num_iopin_list" : {
+        "opin_ne" : 1,
+        "opin_nw" : 0,
+        "opin_sw" : 0,
+        "opin_se" : 1,
+        "ipin_ne" : 4,
+        "ipin_nw" : 0,
+        "ipin_sw" : 0,
+        "ipin_se" : 2
+      }
+    },
+    "id" : 3
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 21,
+      "data_width" : 16,
+      "configuration" : {
+        "17" : [ "Muxn", 29, 28 ],
+        "8" : [ "Muxn", 13, 13 ],
+        "11" : [ "Muxn", 19, 18 ],
+        "20" : [ "Muxn", 33, 33 ],
+        "2" : [ "Muxn", 3, 2 ],
+        "5" : [ "Muxn", 9, 8 ],
+        "14" : [ "Muxn", 24, 24 ],
+        "13" : [ "Muxn", 23, 22 ],
+        "4" : [ "Muxn", 7, 6 ],
+        "16" : [ "Muxn", 27, 26 ],
+        "7" : [ "Muxn", 12, 11 ],
+        "1" : [ "Muxn", 1, 0 ],
+        "10" : [ "Muxn", 17, 16 ],
+        "19" : [ "Muxn", 32, 31 ],
+        "18" : [ "Muxn", 30, 30 ],
+        "9" : [ "Muxn", 15, 14 ],
+        "21" : [ "Muxn", 35, 34 ],
+        "3" : [ "Muxn", 5, 4 ],
+        "12" : [ "Muxn", 21, 20 ],
+        "15" : [ "Muxn", 25, 25 ],
+        "6" : [ "Muxn", 10, 10 ],
+        "0" : [ "This", 35, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 2,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 4,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 5,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 6,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 7,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 8,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 9,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 10,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 11,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 12,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 13,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 14,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 15,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 16,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 17,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 18,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 19,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 20,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 21,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 13,
+      "track_reged" : true,
+      "connections" : {
+        "69" : [ 18, "Muxn", 0, 0, "This", 5 ],
+        "0" : [ 0, "This", 11, 1, "Muxn", 0 ],
+        "5" : [ 0, "This", 3, 2, "Muxn", 1 ],
+        "10" : [ 0, "This", 6, 3, "Muxn", 2 ],
+        "56" : [ 0, "This", 5, 15, "Muxn", 0 ],
+        "42" : [ 0, "This", 4, 11, "Muxn", 2 ],
+        "24" : [ 0, "This", 9, 7, "Muxn", 0 ],
+        "37" : [ 0, "This", 10, 10, "Muxn", 1 ],
+        "25" : [ 0, "This", 12, 7, "Muxn", 1 ],
+        "52" : [ 13, "Muxn", 0, 0, "This", 0 ],
+        "14" : [ 0, "This", 7, 4, "Muxn", 2 ],
+        "20" : [ 5, "Muxn", 0, 0, "This", 13 ],
+        "46" : [ 0, "This", 3, 12, "Muxn", 2 ],
+        "57" : [ 0, "This", 7, 15, "Muxn", 1 ],
+        "78" : [ 0, "This", 0, 21, "Muxn", 1 ],
+        "29" : [ 0, "This", 1, 8, "Muxn", 0 ],
+        "61" : [ 0, "This", 7, 16, "Muxn", 2 ],
+        "1" : [ 0, "This", 3, 1, "Muxn", 1 ],
+        "74" : [ 0, "This", 2, 20, "Muxn", 0 ],
+        "6" : [ 0, "This", 8, 2, "Muxn", 2 ],
+        "60" : [ 0, "This", 0, 16, "Muxn", 1 ],
+        "28" : [ 7, "Muxn", 0, 0, "This", 15 ],
+        "38" : [ 0, "This", 1, 10, "Muxn", 2 ],
+        "70" : [ 0, "This", 10, 19, "Muxn", 0 ],
+        "21" : [ 0, "This", 0, 6, "Muxn", 0 ],
+        "33" : [ 0, "This", 10, 9, "Muxn", 1 ],
+        "65" : [ 0, "This", 6, 17, "Muxn", 2 ],
+        "9" : [ 0, "This", 4, 3, "Muxn", 1 ],
+        "53" : [ 0, "This", 4, 14, "Muxn", 0 ],
+        "77" : [ 0, "This", 9, 21, "Muxn", 0 ],
+        "13" : [ 0, "This", 5, 4, "Muxn", 1 ],
+        "41" : [ 0, "This", 11, 11, "Muxn", 1 ],
+        "73" : [ 19, "Muxn", 0, 0, "This", 6 ],
+        "2" : [ 0, "This", 8, 1, "Muxn", 2 ],
+        "32" : [ 0, "This", 9, 9, "Muxn", 0 ],
+        "34" : [ 0, "This", 0, 9, "Muxn", 2 ],
+        "45" : [ 0, "This", 11, 12, "Muxn", 1 ],
+        "64" : [ 0, "This", 1, 17, "Muxn", 1 ],
+        "17" : [ 0, "This", 12, 5, "Muxn", 1 ],
+        "22" : [ 0, "This", 6, 6, "Muxn", 1 ],
+        "44" : [ 0, "This", 10, 12, "Muxn", 0 ],
+        "59" : [ 0, "This", 9, 16, "Muxn", 0 ],
+        "27" : [ 0, "This", 7, 7, "Muxn", 3 ],
+        "71" : [ 0, "This", 1, 19, "Muxn", 1 ],
+        "12" : [ 0, "This", 12, 4, "Muxn", 0 ],
+        "54" : [ 0, "This", 6, 14, "Muxn", 1 ],
+        "49" : [ 0, "This", 11, 13, "Muxn", 1 ],
+        "76" : [ 20, "Muxn", 0, 0, "This", 7 ],
+        "7" : [ 2, "Muxn", 0, 0, "This", 10 ],
+        "39" : [ 10, "Muxn", 0, 0, "This", 18 ],
+        "66" : [ 17, "Muxn", 0, 0, "This", 4 ],
+        "3" : [ 1, "Muxn", 0, 0, "This", 9 ],
+        "80" : [ 21, "Muxn", 0, 0, "This", 8 ],
+        "35" : [ 9, "Muxn", 0, 0, "This", 17 ],
+        "48" : [ 0, "This", 10, 13, "Muxn", 0 ],
+        "63" : [ 0, "This", 12, 17, "Muxn", 0 ],
+        "18" : [ 0, "This", 0, 5, "Muxn", 2 ],
+        "50" : [ 0, "This", 3, 13, "Muxn", 2 ],
+        "67" : [ 0, "This", 2, 18, "Muxn", 0 ],
+        "16" : [ 0, "This", 9, 5, "Muxn", 0 ],
+        "31" : [ 8, "Muxn", 0, 0, "This", 16 ],
+        "11" : [ 3, "Muxn", 0, 0, "This", 11 ],
+        "72" : [ 0, "This", 4, 19, "Muxn", 2 ],
+        "43" : [ 11, "Muxn", 0, 0, "This", 19 ],
+        "40" : [ 0, "This", 10, 11, "Muxn", 0 ],
+        "26" : [ 0, "This", 2, 7, "Muxn", 2 ],
+        "55" : [ 14, "Muxn", 0, 0, "This", 1 ],
+        "23" : [ 6, "Muxn", 0, 0, "This", 14 ],
+        "8" : [ 0, "This", 11, 3, "Muxn", 0 ],
+        "75" : [ 0, "This", 3, 20, "Muxn", 1 ],
+        "58" : [ 15, "Muxn", 0, 0, "This", 2 ],
+        "36" : [ 0, "This", 9, 10, "Muxn", 0 ],
+        "30" : [ 0, "This", 8, 8, "Muxn", 1 ],
+        "51" : [ 0, "This", 8, 13, "Muxn", 3 ],
+        "19" : [ 0, "This", 6, 5, "Muxn", 3 ],
+        "4" : [ 0, "This", 12, 2, "Muxn", 0 ],
+        "79" : [ 0, "This", 5, 21, "Muxn", 2 ],
+        "47" : [ 12, "Muxn", 0, 0, "This", 20 ],
+        "15" : [ 4, "Muxn", 0, 0, "This", 12 ],
+        "68" : [ 0, "This", 8, 18, "Muxn", 1 ],
+        "62" : [ 16, "Muxn", 0, 0, "This", 3 ]
+      },
+      "cfg_blk_index" : 5,
+      "num_iopin_list" : {
+        "opin_ne" : 1,
+        "opin_nw" : 1,
+        "opin_sw" : 1,
+        "opin_se" : 1,
+        "ipin_ne" : 4,
+        "ipin_nw" : 4,
+        "ipin_sw" : 2,
+        "ipin_se" : 2
+      }
+    },
+    "id" : 4
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 12,
+      "data_width" : 16,
+      "configuration" : {
+        "2" : [ "Muxn", 1, 1 ],
+        "1" : [ "Muxn", 0, 0 ],
+        "3" : [ "Muxn", 2, 2 ],
+        "0" : [ "This", 2, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 2,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 8,
+      "track_reged" : false,
+      "connections" : {
+        "0" : [ 0, "This", 5, 0, "This", 6 ],
+        "5" : [ 0, "This", 7, 2, "Muxn", 0 ],
+        "10" : [ 0, "This", 4, 0, "This", 2 ],
+        "14" : [ 0, "This", 0, 3, "Muxn", 1 ],
+        "1" : [ 0, "This", 7, 1, "Muxn", 0 ],
+        "6" : [ 0, "This", 4, 2, "Muxn", 1 ],
+        "9" : [ 0, "This", 3, 0, "This", 1 ],
+        "13" : [ 0, "This", 6, 3, "Muxn", 0 ],
+        "2" : [ 0, "This", 5, 1, "Muxn", 1 ],
+        "12" : [ 0, "This", 2, 0, "This", 4 ],
+        "7" : [ 2, "Muxn", 0, 0, "This", 9 ],
+        "3" : [ 1, "Muxn", 0, 0, "This", 7 ],
+        "11" : [ 0, "This", 1, 0, "This", 3 ],
+        "8" : [ 0, "This", 5, 0, "This", 0 ],
+        "4" : [ 0, "This", 3, 0, "This", 8 ],
+        "15" : [ 3, "Muxn", 0, 0, "This", 5 ]
+      },
+      "cfg_blk_index" : 6,
+      "num_iopin_list" : {
+        "opin_ne" : 0,
+        "opin_nw" : 1,
+        "opin_sw" : 1,
+        "opin_se" : 0,
+        "ipin_ne" : 0,
+        "ipin_nw" : 4,
+        "ipin_sw" : 2,
+        "ipin_se" : 0
+      }
+    },
+    "id" : 5
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 13,
+      "data_width" : 16,
+      "configuration" : {
+        "8" : [ "Muxn", 8, 8 ],
+        "11" : [ "Muxn", 12, 12 ],
+        "2" : [ "Muxn", 1, 1 ],
+        "5" : [ "Muxn", 5, 4 ],
+        "4" : [ "Muxn", 3, 3 ],
+        "7" : [ "Muxn", 7, 7 ],
+        "10" : [ "Muxn", 11, 11 ],
+        "1" : [ "Muxn", 0, 0 ],
+        "9" : [ "Muxn", 10, 9 ],
+        "3" : [ "Muxn", 2, 2 ],
+        "6" : [ "Muxn", 6, 6 ],
+        "0" : [ "This", 12, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 2,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 4,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 5,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 6,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 7,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 8,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 9,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 10,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 11,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 11,
+      "track_reged" : true,
+      "connections" : {
+        "0" : [ 0, "This", 6, 0, "This", 9 ],
+        "5" : [ 0, "This", 9, 2, "Muxn", 0 ],
+        "10" : [ 3, "Muxn", 0, 0, "This", 0 ],
+        "24" : [ 0, "This", 1, 8, "Muxn", 0 ],
+        "25" : [ 0, "This", 8, 8, "Muxn", 1 ],
+        "14" : [ 0, "This", 10, 5, "Muxn", 0 ],
+        "20" : [ 6, "Muxn", 0, 0, "This", 3 ],
+        "29" : [ 0, "This", 4, 9, "Muxn", 2 ],
+        "1" : [ 0, "This", 7, 0, "This", 10 ],
+        "6" : [ 0, "This", 0, 2, "Muxn", 1 ],
+        "28" : [ 0, "This", 0, 9, "Muxn", 1 ],
+        "21" : [ 0, "This", 0, 7, "Muxn", 0 ],
+        "33" : [ 10, "Muxn", 0, 0, "This", 7 ],
+        "9" : [ 0, "This", 6, 3, "Muxn", 1 ],
+        "13" : [ 4, "Muxn", 0, 0, "This", 1 ],
+        "2" : [ 0, "This", 9, 1, "Muxn", 0 ],
+        "32" : [ 0, "This", 3, 10, "Muxn", 1 ],
+        "34" : [ 0, "This", 2, 11, "Muxn", 0 ],
+        "17" : [ 5, "Muxn", 0, 0, "This", 2 ],
+        "22" : [ 0, "This", 6, 7, "Muxn", 1 ],
+        "27" : [ 0, "This", 9, 9, "Muxn", 0 ],
+        "12" : [ 0, "This", 7, 4, "Muxn", 1 ],
+        "7" : [ 2, "Muxn", 0, 0, "This", 12 ],
+        "3" : [ 0, "This", 2, 1, "Muxn", 1 ],
+        "35" : [ 0, "This", 5, 11, "Muxn", 1 ],
+        "18" : [ 0, "This", 2, 6, "Muxn", 0 ],
+        "16" : [ 0, "This", 8, 5, "Muxn", 2 ],
+        "31" : [ 0, "This", 1, 10, "Muxn", 0 ],
+        "11" : [ 0, "This", 5, 4, "Muxn", 0 ],
+        "26" : [ 8, "Muxn", 0, 0, "This", 5 ],
+        "23" : [ 7, "Muxn", 0, 0, "This", 4 ],
+        "8" : [ 0, "This", 4, 3, "Muxn", 0 ],
+        "36" : [ 11, "Muxn", 0, 0, "This", 8 ],
+        "30" : [ 9, "Muxn", 0, 0, "This", 6 ],
+        "19" : [ 0, "This", 7, 6, "Muxn", 1 ],
+        "4" : [ 1, "Muxn", 0, 0, "This", 11 ],
+        "15" : [ 0, "This", 3, 5, "Muxn", 1 ]
+      },
+      "cfg_blk_index" : 10,
+      "num_iopin_list" : {
+        "opin_ne" : 1,
+        "opin_nw" : 0,
+        "opin_sw" : 0,
+        "opin_se" : 1,
+        "ipin_ne" : 2,
+        "ipin_nw" : 0,
+        "ipin_sw" : 0,
+        "ipin_se" : 2
+      }
+    },
+    "id" : 6
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 20,
+      "data_width" : 16,
+      "configuration" : {
+        "17" : [ "Muxn", 34, 33 ],
+        "8" : [ "Muxn", 15, 14 ],
+        "11" : [ "Muxn", 22, 21 ],
+        "20" : [ "Muxn", 40, 39 ],
+        "2" : [ "Muxn", 3, 2 ],
+        "5" : [ "Muxn", 9, 8 ],
+        "14" : [ "Muxn", 28, 27 ],
+        "13" : [ "Muxn", 26, 25 ],
+        "4" : [ "Muxn", 7, 6 ],
+        "16" : [ "Muxn", 32, 31 ],
+        "7" : [ "Muxn", 13, 12 ],
+        "1" : [ "Muxn", 1, 0 ],
+        "10" : [ "Muxn", 20, 19 ],
+        "19" : [ "Muxn", 38, 37 ],
+        "18" : [ "Muxn", 36, 35 ],
+        "9" : [ "Muxn", 18, 16 ],
+        "3" : [ "Muxn", 5, 4 ],
+        "12" : [ "Muxn", 24, 23 ],
+        "15" : [ "Muxn", 30, 29 ],
+        "6" : [ "Muxn", 11, 10 ],
+        "0" : [ "This", 40, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 2,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 4,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 5,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 6,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 7,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 8,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 9,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 10,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 11,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 12,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 13,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 14,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 15,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 16,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 17,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 18,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 19,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 20,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 16,
+      "track_reged" : false,
+      "connections" : {
+        "69" : [ 0, "This", 0, 15, "Muxn", 1 ],
+        "0" : [ 0, "This", 14, 1, "Muxn", 0 ],
+        "88" : [ 0, "This", 4, 19, "Muxn", 1 ],
+        "5" : [ 0, "This", 14, 2, "Muxn", 0 ],
+        "10" : [ 0, "This", 12, 3, "Muxn", 0 ],
+        "56" : [ 0, "This", 7, 12, "Muxn", 2 ],
+        "42" : [ 0, "This", 3, 9, "Muxn", 2 ],
+        "24" : [ 5, "Muxn", 0, 0, "This", 16 ],
+        "37" : [ 0, "This", 4, 8, "Muxn", 2 ],
+        "25" : [ 0, "This", 12, 6, "Muxn", 0 ],
+        "52" : [ 0, "This", 10, 11, "Muxn", 2 ],
+        "14" : [ 3, "Muxn", 0, 0, "This", 14 ],
+        "20" : [ 0, "This", 12, 5, "Muxn", 0 ],
+        "46" : [ 0, "This", 5, 10, "Muxn", 0 ],
+        "93" : [ 0, "This", 5, 20, "Muxn", 2 ],
+        "57" : [ 0, "This", 9, 12, "Muxn", 3 ],
+        "78" : [ 0, "This", 2, 17, "Muxn", 0 ],
+        "29" : [ 6, "Muxn", 0, 0, "This", 17 ],
+        "84" : [ 0, "This", 3, 18, "Muxn", 2 ],
+        "61" : [ 0, "This", 10, 13, "Muxn", 2 ],
+        "89" : [ 0, "This", 6, 19, "Muxn", 2 ],
+        "1" : [ 0, "This", 15, 1, "Muxn", 1 ],
+        "74" : [ 0, "This", 1, 16, "Muxn", 1 ],
+        "6" : [ 0, "This", 15, 2, "Muxn", 1 ],
+        "60" : [ 0, "This", 8, 13, "Muxn", 1 ],
+        "85" : [ 0, "This", 7, 18, "Muxn", 3 ],
+        "28" : [ 0, "This", 3, 6, "Muxn", 3 ],
+        "38" : [ 0, "This", 6, 8, "Muxn", 3 ],
+        "70" : [ 0, "This", 5, 15, "Muxn", 2 ],
+        "21" : [ 0, "This", 13, 5, "Muxn", 1 ],
+        "33" : [ 0, "This", 7, 7, "Muxn", 3 ],
+        "92" : [ 0, "This", 0, 20, "Muxn", 1 ],
+        "65" : [ 0, "This", 6, 14, "Muxn", 2 ],
+        "9" : [ 2, "Muxn", 0, 0, "This", 13 ],
+        "53" : [ 11, "Muxn", 0, 0, "This", 2 ],
+        "77" : [ 16, "Muxn", 0, 0, "This", 7 ],
+        "13" : [ 0, "This", 9, 3, "Muxn", 3 ],
+        "41" : [ 0, "This", 14, 9, "Muxn", 1 ],
+        "73" : [ 0, "This", 15, 16, "Muxn", 0 ],
+        "2" : [ 0, "This", 6, 1, "Muxn", 2 ],
+        "32" : [ 0, "This", 3, 7, "Muxn", 2 ],
+        "34" : [ 7, "Muxn", 0, 0, "This", 18 ],
+        "45" : [ 9, "Muxn", 0, 0, "This", 0 ],
+        "64" : [ 0, "This", 1, 14, "Muxn", 1 ],
+        "17" : [ 0, "This", 2, 4, "Muxn", 2 ],
+        "22" : [ 0, "This", 0, 5, "Muxn", 2 ],
+        "44" : [ 0, "This", 11, 9, "Muxn", 4 ],
+        "59" : [ 0, "This", 2, 13, "Muxn", 0 ],
+        "27" : [ 0, "This", 1, 6, "Muxn", 2 ],
+        "71" : [ 0, "This", 10, 15, "Muxn", 3 ],
+        "12" : [ 0, "This", 0, 3, "Muxn", 2 ],
+        "54" : [ 0, "This", 15, 12, "Muxn", 0 ],
+        "49" : [ 10, "Muxn", 0, 0, "This", 1 ],
+        "86" : [ 18, "Muxn", 0, 0, "This", 9 ],
+        "81" : [ 17, "Muxn", 0, 0, "This", 8 ],
+        "76" : [ 0, "This", 9, 16, "Muxn", 3 ],
+        "7" : [ 0, "This", 7, 2, "Muxn", 2 ],
+        "39" : [ 8, "Muxn", 0, 0, "This", 19 ],
+        "91" : [ 0, "This", 12, 20, "Muxn", 0 ],
+        "66" : [ 0, "This", 11, 14, "Muxn", 3 ],
+        "3" : [ 0, "This", 11, 1, "Muxn", 3 ],
+        "80" : [ 0, "This", 11, 17, "Muxn", 2 ],
+        "35" : [ 0, "This", 13, 8, "Muxn", 0 ],
+        "48" : [ 0, "This", 9, 10, "Muxn", 2 ],
+        "63" : [ 0, "This", 14, 14, "Muxn", 0 ],
+        "18" : [ 0, "This", 10, 4, "Muxn", 3 ],
+        "95" : [ 20, "Muxn", 0, 0, "This", 11 ],
+        "50" : [ 0, "This", 4, 11, "Muxn", 0 ],
+        "67" : [ 14, "Muxn", 0, 0, "This", 5 ],
+        "16" : [ 0, "This", 15, 4, "Muxn", 1 ],
+        "31" : [ 0, "This", 14, 7, "Muxn", 1 ],
+        "11" : [ 0, "This", 15, 3, "Muxn", 1 ],
+        "72" : [ 15, "Muxn", 0, 0, "This", 6 ],
+        "43" : [ 0, "This", 6, 9, "Muxn", 3 ],
+        "87" : [ 0, "This", 2, 19, "Muxn", 0 ],
+        "40" : [ 0, "This", 13, 9, "Muxn", 0 ],
+        "26" : [ 0, "This", 13, 6, "Muxn", 1 ],
+        "55" : [ 0, "This", 0, 12, "Muxn", 1 ],
+        "23" : [ 0, "This", 5, 5, "Muxn", 3 ],
+        "8" : [ 0, "This", 9, 2, "Muxn", 3 ],
+        "75" : [ 0, "This", 3, 16, "Muxn", 2 ],
+        "58" : [ 12, "Muxn", 0, 0, "This", 3 ],
+        "82" : [ 0, "This", 13, 18, "Muxn", 0 ],
+        "36" : [ 0, "This", 14, 8, "Muxn", 1 ],
+        "30" : [ 0, "This", 13, 7, "Muxn", 0 ],
+        "51" : [ 0, "This", 8, 11, "Muxn", 1 ],
+        "19" : [ 4, "Muxn", 0, 0, "This", 15 ],
+        "4" : [ 1, "Muxn", 0, 0, "This", 12 ],
+        "79" : [ 0, "This", 4, 17, "Muxn", 1 ],
+        "94" : [ 0, "This", 8, 20, "Muxn", 3 ],
+        "47" : [ 0, "This", 7, 10, "Muxn", 1 ],
+        "15" : [ 0, "This", 12, 4, "Muxn", 0 ],
+        "68" : [ 0, "This", 12, 15, "Muxn", 0 ],
+        "62" : [ 13, "Muxn", 0, 0, "This", 4 ],
+        "90" : [ 19, "Muxn", 0, 0, "This", 10 ],
+        "83" : [ 0, "This", 1, 18, "Muxn", 1 ]
+      },
+      "cfg_blk_index" : 11,
+      "num_iopin_list" : {
+        "opin_ne" : 1,
+        "opin_nw" : 1,
+        "opin_sw" : 1,
+        "opin_se" : 1,
+        "ipin_ne" : 2,
+        "ipin_nw" : 2,
+        "ipin_sw" : 2,
+        "ipin_se" : 2
+      }
+    },
+    "id" : 7
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 13,
+      "data_width" : 16,
+      "configuration" : {
+        "8" : [ "Muxn", 8, 8 ],
+        "11" : [ "Muxn", 12, 11 ],
+        "2" : [ "Muxn", 1, 1 ],
+        "5" : [ "Muxn", 4, 4 ],
+        "4" : [ "Muxn", 3, 3 ],
+        "7" : [ "Muxn", 7, 7 ],
+        "10" : [ "Muxn", 10, 10 ],
+        "1" : [ "Muxn", 0, 0 ],
+        "9" : [ "Muxn", 9, 9 ],
+        "3" : [ "Muxn", 2, 2 ],
+        "6" : [ "Muxn", 6, 5 ],
+        "0" : [ "This", 12, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 2,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 4,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 5,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 6,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 7,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 8,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 9,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 10,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 11,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 11,
+      "track_reged" : true,
+      "connections" : {
+        "0" : [ 0, "This", 10, 1, "Muxn", 0 ],
+        "5" : [ 2, "Muxn", 0, 0, "This", 10 ],
+        "10" : [ 3, "Muxn", 0, 0, "This", 0 ],
+        "24" : [ 0, "This", 1, 8, "Muxn", 0 ],
+        "25" : [ 0, "This", 8, 8, "Muxn", 1 ],
+        "14" : [ 0, "This", 4, 5, "Muxn", 0 ],
+        "20" : [ 6, "Muxn", 0, 0, "This", 3 ],
+        "29" : [ 9, "Muxn", 0, 0, "This", 6 ],
+        "1" : [ 0, "This", 8, 1, "Muxn", 1 ],
+        "6" : [ 0, "This", 3, 0, "This", 11 ],
+        "28" : [ 0, "This", 3, 9, "Muxn", 1 ],
+        "21" : [ 0, "This", 2, 7, "Muxn", 0 ],
+        "33" : [ 0, "This", 9, 11, "Muxn", 0 ],
+        "9" : [ 0, "This", 8, 3, "Muxn", 1 ],
+        "13" : [ 4, "Muxn", 0, 0, "This", 1 ],
+        "2" : [ 1, "Muxn", 0, 0, "This", 9 ],
+        "32" : [ 10, "Muxn", 0, 0, "This", 7 ],
+        "34" : [ 0, "This", 0, 11, "Muxn", 1 ],
+        "17" : [ 0, "This", 10, 6, "Muxn", 0 ],
+        "22" : [ 0, "This", 7, 7, "Muxn", 1 ],
+        "27" : [ 0, "This", 1, 9, "Muxn", 0 ],
+        "12" : [ 0, "This", 6, 4, "Muxn", 1 ],
+        "7" : [ 0, "This", 4, 0, "This", 12 ],
+        "3" : [ 0, "This", 10, 2, "Muxn", 0 ],
+        "35" : [ 0, "This", 5, 11, "Muxn", 2 ],
+        "18" : [ 0, "This", 0, 6, "Muxn", 1 ],
+        "16" : [ 5, "Muxn", 0, 0, "This", 2 ],
+        "31" : [ 0, "This", 4, 10, "Muxn", 1 ],
+        "11" : [ 0, "This", 5, 4, "Muxn", 0 ],
+        "26" : [ 8, "Muxn", 0, 0, "This", 5 ],
+        "23" : [ 7, "Muxn", 0, 0, "This", 4 ],
+        "8" : [ 0, "This", 3, 3, "Muxn", 0 ],
+        "36" : [ 11, "Muxn", 0, 0, "This", 8 ],
+        "30" : [ 0, "This", 2, 10, "Muxn", 0 ],
+        "19" : [ 0, "This", 6, 6, "Muxn", 2 ],
+        "4" : [ 0, "This", 6, 2, "Muxn", 1 ],
+        "15" : [ 0, "This", 7, 5, "Muxn", 1 ]
+      },
+      "cfg_blk_index" : 12,
+      "num_iopin_list" : {
+        "opin_ne" : 0,
+        "opin_nw" : 1,
+        "opin_sw" : 1,
+        "opin_se" : 0,
+        "ipin_ne" : 0,
+        "ipin_nw" : 2,
+        "ipin_sw" : 2,
+        "ipin_se" : 0
+      }
+    },
+    "id" : 8
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 12,
+      "data_width" : 16,
+      "configuration" : {
+        "2" : [ "Muxn", 1, 1 ],
+        "1" : [ "Muxn", 0, 0 ],
+        "3" : [ "Muxn", 2, 2 ],
+        "0" : [ "This", 2, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 2,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 8,
+      "track_reged" : false,
+      "connections" : {
+        "0" : [ 0, "This", 2, 0, "This", 8 ],
+        "5" : [ 0, "This", 6, 2, "Muxn", 0 ],
+        "10" : [ 0, "This", 7, 3, "Muxn", 0 ],
+        "14" : [ 0, "This", 0, 0, "This", 4 ],
+        "1" : [ 0, "This", 6, 1, "Muxn", 0 ],
+        "6" : [ 0, "This", 1, 2, "Muxn", 1 ],
+        "9" : [ 0, "This", 5, 0, "This", 1 ],
+        "13" : [ 0, "This", 2, 0, "This", 3 ],
+        "2" : [ 0, "This", 2, 1, "Muxn", 1 ],
+        "12" : [ 3, "Muxn", 0, 0, "This", 2 ],
+        "7" : [ 2, "Muxn", 0, 0, "This", 11 ],
+        "3" : [ 1, "Muxn", 0, 0, "This", 9 ],
+        "11" : [ 0, "This", 3, 3, "Muxn", 1 ],
+        "8" : [ 0, "This", 4, 0, "This", 0 ],
+        "4" : [ 0, "This", 0, 0, "This", 10 ],
+        "15" : [ 0, "This", 1, 0, "This", 5 ]
+      },
+      "cfg_blk_index" : 16,
+      "num_iopin_list" : {
+        "opin_ne" : 1,
+        "opin_nw" : 0,
+        "opin_sw" : 0,
+        "opin_se" : 1,
+        "ipin_ne" : 2,
+        "ipin_nw" : 0,
+        "ipin_sw" : 0,
+        "ipin_se" : 4
+      }
+    },
+    "id" : 9
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 21,
+      "data_width" : 16,
+      "configuration" : {
+        "17" : [ "Muxn", 28, 28 ],
+        "8" : [ "Muxn", 15, 14 ],
+        "11" : [ "Muxn", 20, 19 ],
+        "20" : [ "Muxn", 34, 33 ],
+        "2" : [ "Muxn", 3, 2 ],
+        "5" : [ "Muxn", 9, 8 ],
+        "14" : [ "Muxn", 24, 24 ],
+        "13" : [ "Muxn", 23, 22 ],
+        "4" : [ "Muxn", 7, 6 ],
+        "16" : [ "Muxn", 27, 26 ],
+        "7" : [ "Muxn", 13, 12 ],
+        "1" : [ "Muxn", 1, 0 ],
+        "10" : [ "Muxn", 18, 18 ],
+        "19" : [ "Muxn", 32, 31 ],
+        "18" : [ "Muxn", 30, 29 ],
+        "9" : [ "Muxn", 17, 16 ],
+        "21" : [ "Muxn", 35, 35 ],
+        "3" : [ "Muxn", 5, 4 ],
+        "12" : [ "Muxn", 21, 21 ],
+        "15" : [ "Muxn", 25, 25 ],
+        "6" : [ "Muxn", 11, 10 ],
+        "0" : [ "This", 35, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 2,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 4,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 5,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 6,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 7,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 8,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 9,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 10,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 11,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 12,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 13,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 14,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 15,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 16,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 17,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 18,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 19,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 20,
+        "type" : "Muxn",
+        "module_id" : 1
+      }, {
+        "id" : 21,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 13,
+      "track_reged" : true,
+      "connections" : {
+        "69" : [ 18, "Muxn", 0, 0, "This", 5 ],
+        "0" : [ 0, "This", 11, 1, "Muxn", 0 ],
+        "5" : [ 0, "This", 12, 2, "Muxn", 1 ],
+        "10" : [ 0, "This", 0, 3, "Muxn", 2 ],
+        "56" : [ 0, "This", 4, 15, "Muxn", 0 ],
+        "42" : [ 0, "This", 4, 11, "Muxn", 2 ],
+        "24" : [ 0, "This", 9, 7, "Muxn", 0 ],
+        "37" : [ 0, "This", 3, 10, "Muxn", 0 ],
+        "25" : [ 0, "This", 1, 7, "Muxn", 1 ],
+        "52" : [ 13, "Muxn", 0, 0, "This", 0 ],
+        "14" : [ 0, "This", 2, 4, "Muxn", 2 ],
+        "20" : [ 0, "This", 10, 6, "Muxn", 0 ],
+        "46" : [ 0, "This", 8, 12, "Muxn", 1 ],
+        "57" : [ 0, "This", 8, 15, "Muxn", 1 ],
+        "78" : [ 0, "This", 2, 21, "Muxn", 0 ],
+        "29" : [ 0, "This", 2, 8, "Muxn", 1 ],
+        "61" : [ 0, "This", 7, 16, "Muxn", 2 ],
+        "1" : [ 0, "This", 12, 1, "Muxn", 1 ],
+        "74" : [ 0, "This", 12, 20, "Muxn", 0 ],
+        "6" : [ 0, "This", 7, 2, "Muxn", 2 ],
+        "60" : [ 0, "This", 0, 16, "Muxn", 1 ],
+        "28" : [ 0, "This", 10, 8, "Muxn", 0 ],
+        "38" : [ 0, "This", 7, 10, "Muxn", 1 ],
+        "70" : [ 0, "This", 9, 19, "Muxn", 0 ],
+        "21" : [ 0, "This", 0, 6, "Muxn", 1 ],
+        "33" : [ 0, "This", 11, 9, "Muxn", 1 ],
+        "65" : [ 17, "Muxn", 0, 0, "This", 4 ],
+        "9" : [ 0, "This", 12, 3, "Muxn", 1 ],
+        "53" : [ 0, "This", 5, 14, "Muxn", 0 ],
+        "77" : [ 20, "Muxn", 0, 0, "This", 7 ],
+        "13" : [ 0, "This", 12, 4, "Muxn", 1 ],
+        "41" : [ 0, "This", 11, 11, "Muxn", 1 ],
+        "73" : [ 19, "Muxn", 0, 0, "This", 6 ],
+        "2" : [ 0, "This", 6, 1, "Muxn", 2 ],
+        "32" : [ 0, "This", 10, 9, "Muxn", 0 ],
+        "34" : [ 0, "This", 3, 9, "Muxn", 2 ],
+        "45" : [ 0, "This", 5, 12, "Muxn", 0 ],
+        "64" : [ 0, "This", 8, 17, "Muxn", 1 ],
+        "17" : [ 0, "This", 0, 5, "Muxn", 1 ],
+        "22" : [ 0, "This", 5, 6, "Muxn", 2 ],
+        "44" : [ 11, "Muxn", 0, 0, "This", 19 ],
+        "59" : [ 0, "This", 12, 16, "Muxn", 0 ],
+        "27" : [ 7, "Muxn", 0, 0, "This", 15 ],
+        "71" : [ 0, "This", 0, 19, "Muxn", 1 ],
+        "12" : [ 0, "This", 9, 4, "Muxn", 0 ],
+        "54" : [ 0, "This", 7, 14, "Muxn", 1 ],
+        "49" : [ 0, "This", 11, 13, "Muxn", 1 ],
+        "76" : [ 0, "This", 3, 20, "Muxn", 2 ],
+        "7" : [ 2, "Muxn", 0, 0, "This", 10 ],
+        "39" : [ 10, "Muxn", 0, 0, "This", 18 ],
+        "66" : [ 0, "This", 11, 18, "Muxn", 0 ],
+        "3" : [ 1, "Muxn", 0, 0, "This", 9 ],
+        "80" : [ 21, "Muxn", 0, 0, "This", 8 ],
+        "35" : [ 0, "This", 7, 9, "Muxn", 3 ],
+        "48" : [ 0, "This", 10, 13, "Muxn", 0 ],
+        "63" : [ 0, "This", 2, 17, "Muxn", 0 ],
+        "18" : [ 0, "This", 5, 5, "Muxn", 2 ],
+        "50" : [ 0, "This", 3, 13, "Muxn", 2 ],
+        "67" : [ 0, "This", 1, 18, "Muxn", 1 ],
+        "16" : [ 0, "This", 9, 5, "Muxn", 0 ],
+        "31" : [ 8, "Muxn", 0, 0, "This", 16 ],
+        "11" : [ 3, "Muxn", 0, 0, "This", 11 ],
+        "72" : [ 0, "This", 5, 19, "Muxn", 2 ],
+        "43" : [ 0, "This", 6, 11, "Muxn", 3 ],
+        "40" : [ 0, "This", 10, 11, "Muxn", 0 ],
+        "26" : [ 0, "This", 3, 7, "Muxn", 2 ],
+        "55" : [ 14, "Muxn", 0, 0, "This", 1 ],
+        "23" : [ 6, "Muxn", 0, 0, "This", 14 ],
+        "8" : [ 0, "This", 9, 3, "Muxn", 0 ],
+        "75" : [ 0, "This", 1, 20, "Muxn", 1 ],
+        "58" : [ 15, "Muxn", 0, 0, "This", 2 ],
+        "36" : [ 9, "Muxn", 0, 0, "This", 17 ],
+        "30" : [ 0, "This", 4, 8, "Muxn", 2 ],
+        "51" : [ 0, "This", 6, 13, "Muxn", 3 ],
+        "19" : [ 5, "Muxn", 0, 0, "This", 13 ],
+        "4" : [ 0, "This", 11, 2, "Muxn", 0 ],
+        "79" : [ 0, "This", 4, 21, "Muxn", 1 ],
+        "47" : [ 12, "Muxn", 0, 0, "This", 20 ],
+        "15" : [ 4, "Muxn", 0, 0, "This", 12 ],
+        "68" : [ 0, "This", 6, 18, "Muxn", 2 ],
+        "62" : [ 16, "Muxn", 0, 0, "This", 3 ]
+      },
+      "cfg_blk_index" : 17,
+      "num_iopin_list" : {
+        "opin_ne" : 1,
+        "opin_nw" : 1,
+        "opin_sw" : 1,
+        "opin_se" : 1,
+        "ipin_ne" : 2,
+        "ipin_nw" : 2,
+        "ipin_sw" : 4,
+        "ipin_se" : 4
+      }
+    },
+    "id" : 10
+  }, {
+    "type" : "GIB",
+    "attributes" : {
+      "num_output" : 12,
+      "data_width" : 16,
+      "configuration" : {
+        "1" : [ "Muxn", 0, 0 ],
+        "0" : [ "This", 0, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "Muxn"
+      } ],
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "Muxn",
+        "module_id" : 1
+      } ],
+      "num_input" : 8,
+      "track_reged" : false,
+      "connections" : {
+        "0" : [ 0, "This", 7, 0, "This", 6 ],
+        "5" : [ 0, "This", 5, 0, "This", 11 ],
+        "10" : [ 0, "This", 0, 1, "Muxn", 1 ],
+        "1" : [ 0, "This", 7, 0, "This", 7 ],
+        "6" : [ 0, "This", 3, 0, "This", 0 ],
+        "9" : [ 0, "This", 7, 1, "Muxn", 0 ],
+        "13" : [ 0, "This", 1, 0, "This", 5 ],
+        "2" : [ 0, "This", 3, 0, "This", 8 ],
+        "12" : [ 0, "This", 2, 0, "This", 4 ],
+        "7" : [ 0, "This", 5, 0, "This", 1 ],
+        "3" : [ 0, "This", 3, 0, "This", 9 ],
+        "11" : [ 1, "Muxn", 0, 0, "This", 3 ],
+        "8" : [ 0, "This", 4, 0, "This", 2 ],
+        "4" : [ 0, "This", 4, 0, "This", 10 ]
+      },
+      "cfg_blk_index" : 18,
+      "num_iopin_list" : {
+        "opin_ne" : 0,
+        "opin_nw" : 1,
+        "opin_sw" : 1,
+        "opin_se" : 0,
+        "ipin_ne" : 0,
+        "ipin_nw" : 2,
+        "ipin_sw" : 4,
+        "ipin_se" : 0
+      }
+    },
+    "id" : 11
+  }, {
+    "type" : "IOB",
+    "attributes" : {
+      "num_operands" : 4,
+      "num_output" : 1,
+      "ag_nest_levels" : 5,
+      "data_width" : 16,
+      "io_controller_cfg_id" : {
+        "Stride1" : 10,
+        "Cycles0" : 9,
+        "UseAccum" : 26,
+        "Waittime" : 23,
+        "IsStore" : 20,
+        "Cycles3" : 15,
+        "Stride3" : 14,
+        "Cycles2" : 13,
+        "BaseAddr" : 7,
+        "Stride0" : 8,
+        "Latency" : 19,
+        "Preloadtime" : 22,
+        "Stride2" : 12,
+        "Cycles1" : 11,
+        "UseAddr" : 21,
+        "Storetime" : 24,
+        "II" : 18,
+        "Cycles4" : 17,
+        "UseSerial" : 25,
+        "Stride4" : 16
+      },
+      "iob_mode" : 1,
+      "sub_modules" : [ {
+        "id" : 1,
+        "type" : "IOController"
+      }, {
+        "id" : 2,
+        "type" : "Muxn"
+      }, {
+        "id" : 3,
+        "type" : "RDU"
+      } ],
+      "configuration" : {
+        "23" : [ "Waittime", 163, 152 ],
+        "8" : [ "Stride0", 26, 14 ],
+        "17" : [ "Cycles4", 138, 127 ],
+        "26" : [ "UseAccum", 169, 169 ],
+        "11" : [ "Cycles1", 63, 52 ],
+        "20" : [ "IsStore", 146, 146 ],
+        "2" : [ "RDU", 185, 170 ],
+        "5" : [ "Muxn", 188, 188 ],
+        "14" : [ "Stride3", 101, 89 ],
+        "13" : [ "Cycles2", 88, 77 ],
+        "4" : [ "Muxn", 187, 187 ],
+        "22" : [ "Preloadtime", 151, 148 ],
+        "7" : [ "BaseAddr", 13, 0 ],
+        "16" : [ "Stride4", 126, 114 ],
+        "25" : [ "UseSerial", 168, 168 ],
+        "10" : [ "Stride1", 51, 39 ],
+        "19" : [ "Latency", 145, 140 ],
+        "9" : [ "Cycles0", 38, 27 ],
+        "18" : [ "II", 139, 139 ],
+        "12" : [ "Stride2", 76, 64 ],
+        "21" : [ "UseAddr", 147, 147 ],
+        "3" : [ "Muxn", 186, 186 ],
+        "15" : [ "Cycles3", 113, 102 ],
+        "6" : [ "Muxn", 189, 189 ],
+        "24" : [ "Storetime", 167, 164 ],
+        "0" : [ "This", 189, 0 ]
+      },
+      "instances" : [ {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 1,
+        "type" : "IOController",
+        "module_id" : 1
+      }, {
+        "id" : 3,
+        "type" : "Muxn",
+        "module_id" : 2
+      }, {
+        "id" : 4,
+        "type" : "Muxn",
+        "module_id" : 2
+      }, {
+        "id" : 5,
+        "type" : "Muxn",
+        "module_id" : 2
+      }, {
+        "id" : 6,
+        "type" : "Muxn",
+        "module_id" : 2
+      }, {
+        "id" : 2,
+        "type" : "RDU",
+        "module_id" : 3
+      } ],
+      "num_input" : 8,
+      "cfg_blk_index" : 1,
+      "max_delay" : 8,
+      "connections" : {
+        "0" : [ 1, "IOController", 0, 0, "This", 0 ],
+        "5" : [ 0, "This", 2, 4, "Muxn", 0 ],
+        "10" : [ 0, "This", 5, 5, "Muxn", 1 ],
+        "14" : [ 0, "This", 7, 6, "Muxn", 1 ],
+        "1" : [ 0, "This", 0, 3, "Muxn", 0 ],
+        "6" : [ 0, "This", 3, 4, "Muxn", 1 ],
+        "9" : [ 0, "This", 4, 5, "Muxn", 0 ],
+        "13" : [ 0, "This", 6, 6, "Muxn", 0 ],
+        "2" : [ 0, "This", 1, 3, "Muxn", 1 ],
+        "12" : [ 2, "RDU", 2, 1, "IOController", 2 ],
+        "7" : [ 4, "Muxn", 0, 2, "RDU", 1 ],
+        "3" : [ 3, "Muxn", 0, 2, "RDU", 0 ],
+        "16" : [ 2, "RDU", 3, 1, "IOController", 3 ],
+        "11" : [ 5, "Muxn", 0, 2, "RDU", 2 ],
+        "8" : [ 2, "RDU", 1, 1, "IOController", 1 ],
+        "4" : [ 2, "RDU", 0, 1, "IOController", 0 ],
+        "15" : [ 6, "Muxn", 0, 2, "RDU", 3 ]
+      },
+      "iob_index" : 0
+    },
+    "id" : 1
+  }, {
+    "type" : "GPE",
+    "attributes" : {
+      "affine_ctrl_reg_cfg_id" : {
+        "Latency" : 9,
+        "InitVal" : 7,
+        "SkipFirst" : 12,
+        "Repeats" : 11,
+        "WI" : 8,
+        "Cycles" : 10
+      },
+      "operations" : [ "PASS", "FADD", "FMUL", "FACC", "FSUB", "FMIN", "FMAX", "FAMAX", "FMAC", "FSHL", "TOINT", "TOFLOAT" ],
+      "num_operands" : 2,
+      "num_output" : 1,
+      "data_width" : 16,
+      "configuration" : {
+        "8" : [ "WI", 61, 50 ],
+        "11" : [ "Repeats", 91, 80 ],
+        "2" : [ "ALU", 21, 16 ],
+        "5" : [ "Muxn", 30, 28 ],
+        "4" : [ "RDU", 27, 22 ],
+        "7" : [ "InitVal", 49, 34 ],
+        "10" : [ "Cycles", 79, 68 ],
+        "1" : [ "Const", 15, 0 ],
+        "9" : [ "Latency", 67, 62 ],
+        "12" : [ "SkipFirst", 92, 92 ],
+        "6" : [ "Muxn", 33, 31 ],
+        "0" : [ "This", 92, 0 ]
+      },
+      "sub_modules" : [ {
+        "id" : 3,
+        "type" : "REG"
+      }, {
+        "id" : 5,
+        "type" : "Muxn"
+      }, {
+        "id" : 4,
+        "type" : "RDU"
+      }, {
+        "id" : 2,
+        "type" : "ALU"
+      }, {
+        "id" : 1,
+        "type" : "Const"
+      } ],
+      "instances" : [ {
+        "id" : 3,
+        "type" : "REG",
+        "module_id" : 3
+      }, {
+        "id" : 0,
+        "type" : "This",
+        "module_id" : 0
+      }, {
+        "id" : 5,
+        "type" : "Muxn",
+        "module_id" : 5
+      }, {
+        "id" : 6,
+        "type" : "Muxn",
+        "module_id" : 5
+      }, {
+        "id" : 4,
+        "type" : "RDU",
+        "module_id" : 4
+      }, {
+        "id" : 2,
+        "type" : "ALU",
+        "module_id" : 2
+      }, {
+        "id" : 1,
+        "type" : "Const",
+        "module_id" : 1
+      } ],
+      "num_input" : 8,
+      "connections" : {
+        "0" : [ 2, "ALU", 0, 3, "REG", 0 ],
+        "5" : [ 0, "This", 2, 5, "Muxn", 3 ],
+        "10" : [ 1, "Const", 0, 6, "Muxn", 0 ],
+        "14" : [ 0, "This", 7, 6, "Muxn", 4 ],
+        "1" : [ 3, "REG", 0, 0, "This", 0 ],
+        "6" : [ 0, "This", 3, 5, "Muxn", 4 ],
+        "9" : [ 4, "RDU", 0, 2, "ALU", 0 ],
+        "13" : [ 0, "This", 6, 6, "Muxn", 3 ],
+        "2" : [ 1, "Const", 0, 5, "Muxn", 0 ],
+        "17" : [ 4, "RDU", 1, 2, "ALU", 1 ],
+        "12" : [ 0, "This", 5, 6, "Muxn", 2 ],
+        "7" : [ 3, "REG", 1, 5, "Muxn", 5 ],
+        "3" : [ 0, "This", 0, 5, "Muxn", 1 ],
+        "18" : [ 3, "REG", 1, 2, "ALU", 2 ],
+        "16" : [ 6, "Muxn", 0, 4, "RDU", 1 ],
+        "11" : [ 0, "This", 4, 6, "Muxn", 1 ],
+        "8" : [ 5, "Muxn", 0, 4, "RDU", 0 ],
+        "4" : [ 0, "This", 1, 5, "Muxn", 2 ],
+        "15" : [ 3, "REG", 1, 6, "Muxn", 5 ]
+      },
+      "max_delay" : 4,
+      "cfg_blk_index" : 7
+    },
+    "id" : 2
+  } ],
+  "cfg_blk_offset" : 3,
+  "iob_to_spad_banks" : {
+    "2" : [ 0, 1, 2, 3 ],
+    "1" : [ 0, 1, 2, 3 ],
+    "3" : [ 0, 1, 2, 3 ],
+    "0" : [ 0, 1, 2, 3 ]
+  },
+  "max_cfg_data_num" : 48,
+  "sum_blk_cfg_bits" : 1279,
+  "instances" : [ {
+    "module_id" : 3,
+    "type" : "GIB",
+    "y" : 0,
+    "x" : 1,
+    "track_reged" : false,
+    "cfg_blk_index" : 4,
+    "id" : 4
+  }, {
+    "module_id" : 4,
+    "type" : "GIB",
+    "y" : 2,
+    "x" : 1,
+    "track_reged" : true,
+    "cfg_blk_index" : 5,
+    "id" : 5
+  }, {
+    "module_id" : 5,
+    "type" : "GIB",
+    "y" : 4,
+    "x" : 1,
+    "track_reged" : false,
+    "cfg_blk_index" : 6,
+    "id" : 6
+  }, {
+    "module_id" : 6,
+    "type" : "GIB",
+    "y" : 0,
+    "x" : 3,
+    "track_reged" : true,
+    "cfg_blk_index" : 10,
+    "id" : 10
+  }, {
+    "module_id" : 7,
+    "type" : "GIB",
+    "y" : 2,
+    "x" : 3,
+    "track_reged" : false,
+    "cfg_blk_index" : 11,
+    "id" : 11
+  }, {
+    "module_id" : 8,
+    "type" : "GIB",
+    "y" : 4,
+    "x" : 3,
+    "track_reged" : true,
+    "cfg_blk_index" : 12,
+    "id" : 12
+  }, {
+    "module_id" : 9,
+    "type" : "GIB",
+    "y" : 0,
+    "x" : 5,
+    "track_reged" : false,
+    "cfg_blk_index" : 16,
+    "id" : 16
+  }, {
+    "module_id" : 10,
+    "type" : "GIB",
+    "y" : 2,
+    "x" : 5,
+    "track_reged" : true,
+    "cfg_blk_index" : 17,
+    "id" : 17
+  }, {
+    "module_id" : 11,
+    "type" : "GIB",
+    "y" : 4,
+    "x" : 5,
+    "track_reged" : false,
+    "cfg_blk_index" : 18,
+    "id" : 18
+  }, {
+    "module_id" : 1,
+    "type" : "IOB",
+    "y" : 1,
+    "x" : 0,
+    "cfg_blk_index" : 1,
+    "max_delay" : 8,
+    "iob_index" : 0,
+    "id" : 1
+  }, {
+    "module_id" : 1,
+    "type" : "IOB",
+    "y" : 3,
+    "x" : 0,
+    "cfg_blk_index" : 2,
+    "max_delay" : 8,
+    "iob_index" : 1,
+    "id" : 2
+  }, {
+    "module_id" : 1,
+    "type" : "IOB",
+    "y" : 1,
+    "x" : 6,
+    "cfg_blk_index" : 19,
+    "max_delay" : 8,
+    "iob_index" : 2,
+    "id" : 19
+  }, {
+    "module_id" : 1,
+    "type" : "IOB",
+    "y" : 3,
+    "x" : 6,
+    "cfg_blk_index" : 20,
+    "max_delay" : 8,
+    "iob_index" : 3,
+    "id" : 20
+  }, {
+    "type" : "This",
+    "id" : 0
+  }, {
+    "module_id" : 2,
+    "type" : "GPE",
+    "y" : 1,
+    "x" : 2,
+    "cfg_blk_index" : 7,
+    "max_delay" : 4,
+    "id" : 7
+  }, {
+    "module_id" : 2,
+    "type" : "GPE",
+    "y" : 3,
+    "x" : 2,
+    "cfg_blk_index" : 8,
+    "max_delay" : 4,
+    "id" : 8
+  }, {
+    "module_id" : 2,
+    "type" : "GPE",
+    "y" : 1,
+    "x" : 4,
+    "cfg_blk_index" : 13,
+    "max_delay" : 4,
+    "id" : 13
+  }, {
+    "module_id" : 2,
+    "type" : "GPE",
+    "y" : 3,
+    "x" : 4,
+    "cfg_blk_index" : 14,
+    "max_delay" : 4,
+    "id" : 14
+  } ],
+  "num_input" : 4,
+  "connections" : {
+    "69" : [ 16, "GIB", 7, 13, "GPE", 6 ],
+    "138" : [ 11, "GIB", 8, 12, "GIB", 2 ],
+    "101" : [ 6, "GIB", 1, 5, "GIB", 4 ],
+    "0" : [ 4, "GIB", 6, 1, "IOB", 0 ],
+    "88" : [ 10, "GIB", 0, 4, "GIB", 3 ],
+    "115" : [ 11, "GIB", 0, 10, "GIB", 3 ],
+    "5" : [ 5, "GIB", 11, 1, "IOB", 5 ],
+    "120" : [ 5, "GIB", 8, 11, "GIB", 5 ],
+    "10" : [ 5, "GIB", 13, 2, "IOB", 0 ],
+    "56" : [ 11, "GIB", 14, 8, "GPE", 2 ],
+    "142" : [ 17, "GIB", 0, 16, "GIB", 3 ],
+    "153" : [ 18, "GIB", 2, 17, "GIB", 8 ],
+    "42" : [ 5, "GIB", 19, 7, "GPE", 1 ],
+    "24" : [ 16, "GIB", 10, 19, "IOB", 4 ],
+    "37" : [ 18, "GIB", 11, 20, "IOB", 7 ],
+    "25" : [ 17, "GIB", 19, 19, "IOB", 5 ],
+    "52" : [ 5, "GIB", 17, 8, "GPE", 0 ],
+    "14" : [ 5, "GIB", 15, 2, "IOB", 4 ],
+    "110" : [ 4, "GIB", 4, 10, "GIB", 1 ],
+    "125" : [ 10, "GIB", 4, 11, "GIB", 1 ],
+    "157" : [ 17, "GIB", 6, 18, "GIB", 0 ],
+    "20" : [ 16, "GIB", 8, 19, "IOB", 0 ],
+    "46" : [ 11, "GIB", 12, 7, "GPE", 3 ],
+    "93" : [ 5, "GIB", 2, 4, "GIB", 2 ],
+    "152" : [ 18, "GIB", 1, 17, "GIB", 7 ],
+    "57" : [ 11, "GIB", 15, 8, "GPE", 6 ],
+    "78" : [ 12, "GIB", 11, 14, "GPE", 1 ],
+    "29" : [ 19, "IOB", 0, 17, "GIB", 12 ],
+    "106" : [ 5, "GIB", 3, 6, "GIB", 0 ],
+    "121" : [ 17, "GIB", 3, 11, "GIB", 9 ],
+    "84" : [ 14, "GPE", 0, 11, "GIB", 14 ],
+    "147" : [ 11, "GIB", 11, 17, "GIB", 5 ],
+    "61" : [ 8, "GPE", 0, 6, "GIB", 7 ],
+    "132" : [ 6, "GIB", 5, 12, "GIB", 5 ],
+    "89" : [ 10, "GIB", 1, 4, "GIB", 4 ],
+    "133" : [ 18, "GIB", 3, 12, "GIB", 6 ],
+    "116" : [ 11, "GIB", 1, 10, "GIB", 4 ],
+    "1" : [ 5, "GIB", 9, 1, "IOB", 1 ],
+    "74" : [ 13, "GPE", 0, 16, "GIB", 6 ],
+    "6" : [ 4, "GIB", 9, 1, "IOB", 6 ],
+    "60" : [ 8, "GPE", 0, 5, "GIB", 11 ],
+    "117" : [ 11, "GIB", 2, 10, "GIB", 5 ],
+    "85" : [ 14, "GPE", 0, 12, "GIB", 10 ],
+    "102" : [ 6, "GIB", 2, 5, "GIB", 5 ],
+    "28" : [ 19, "IOB", 0, 16, "GIB", 7 ],
+    "38" : [ 20, "IOB", 0, 17, "GIB", 11 ],
+    "70" : [ 17, "GIB", 9, 13, "GPE", 3 ],
+    "21" : [ 17, "GIB", 17, 19, "IOB", 1 ],
+    "137" : [ 11, "GIB", 7, 12, "GIB", 1 ],
+    "33" : [ 18, "GIB", 9, 20, "IOB", 3 ],
+    "92" : [ 5, "GIB", 1, 4, "GIB", 1 ],
+    "65" : [ 10, "GIB", 12, 13, "GPE", 4 ],
+    "97" : [ 4, "GIB", 0, 5, "GIB", 0 ],
+    "156" : [ 12, "GIB", 8, 18, "GIB", 5 ],
+    "9" : [ 1, "IOB", 0, 5, "GIB", 9 ],
+    "53" : [ 5, "GIB", 18, 8, "GPE", 4 ],
+    "141" : [ 10, "GIB", 8, 16, "GIB", 2 ],
+    "109" : [ 4, "GIB", 3, 10, "GIB", 0 ],
+    "124" : [ 10, "GIB", 3, 11, "GIB", 0 ],
+    "77" : [ 11, "GIB", 17, 14, "GPE", 4 ],
+    "96" : [ 11, "GIB", 5, 5, "GIB", 8 ],
+    "13" : [ 6, "GIB", 7, 2, "IOB", 3 ],
+    "129" : [ 12, "GIB", 2, 11, "GIB", 8 ],
+    "41" : [ 4, "GIB", 11, 7, "GPE", 4 ],
+    "134" : [ 18, "GIB", 4, 12, "GIB", 7 ],
+    "73" : [ 13, "GPE", 0, 11, "GIB", 15 ],
+    "128" : [ 12, "GIB", 1, 11, "GIB", 7 ],
+    "105" : [ 12, "GIB", 5, 6, "GIB", 5 ],
+    "2" : [ 4, "GIB", 7, 1, "IOB", 2 ],
+    "32" : [ 17, "GIB", 14, 20, "IOB", 2 ],
+    "34" : [ 17, "GIB", 15, 20, "IOB", 4 ],
+    "148" : [ 16, "GIB", 3, 17, "GIB", 0 ],
+    "45" : [ 10, "GIB", 10, 7, "GPE", 6 ],
+    "64" : [ 10, "GIB", 11, 13, "GPE", 0 ],
+    "17" : [ 6, "GIB", 9, 2, "IOB", 7 ],
+    "149" : [ 16, "GIB", 4, 17, "GIB", 1 ],
+    "22" : [ 16, "GIB", 9, 19, "IOB", 2 ],
+    "44" : [ 10, "GIB", 9, 7, "GPE", 2 ],
+    "59" : [ 12, "GIB", 10, 8, "GPE", 7 ],
+    "118" : [ 5, "GIB", 6, 11, "GIB", 3 ],
+    "27" : [ 17, "GIB", 20, 19, "IOB", 7 ],
+    "71" : [ 17, "GIB", 10, 13, "GPE", 7 ],
+    "12" : [ 5, "GIB", 14, 2, "IOB", 2 ],
+    "54" : [ 6, "GIB", 10, 8, "GPE", 1 ],
+    "144" : [ 17, "GIB", 2, 16, "GIB", 5 ],
+    "49" : [ 7, "GPE", 0, 5, "GIB", 12 ],
+    "86" : [ 14, "GPE", 0, 17, "GIB", 10 ],
+    "159" : [ 17, "GIB", 8, 18, "GIB", 2 ],
+    "113" : [ 16, "GIB", 1, 10, "GIB", 7 ],
+    "81" : [ 17, "GIB", 12, 14, "GPE", 6 ],
+    "76" : [ 11, "GIB", 16, 14, "GPE", 0 ],
+    "7" : [ 5, "GIB", 12, 1, "IOB", 7 ],
+    "39" : [ 20, "IOB", 0, 18, "GIB", 7 ],
+    "98" : [ 4, "GIB", 1, 5, "GIB", 1 ],
+    "103" : [ 12, "GIB", 3, 6, "GIB", 3 ],
+    "140" : [ 10, "GIB", 7, 16, "GIB", 1 ],
+    "91" : [ 5, "GIB", 0, 4, "GIB", 0 ],
+    "66" : [ 11, "GIB", 18, 13, "GPE", 1 ],
+    "155" : [ 12, "GIB", 7, 18, "GIB", 4 ],
+    "108" : [ 5, "GIB", 5, 6, "GIB", 2 ],
+    "130" : [ 6, "GIB", 3, 12, "GIB", 3 ],
+    "135" : [ 18, "GIB", 5, 12, "GIB", 8 ],
+    "3" : [ 5, "GIB", 10, 1, "IOB", 3 ],
+    "80" : [ 17, "GIB", 11, 14, "GPE", 2 ],
+    "35" : [ 18, "GIB", 10, 20, "IOB", 5 ],
+    "112" : [ 16, "GIB", 0, 10, "GIB", 6 ],
+    "123" : [ 17, "GIB", 5, 11, "GIB", 11 ],
+    "145" : [ 11, "GIB", 9, 17, "GIB", 3 ],
+    "48" : [ 7, "GPE", 0, 4, "GIB", 7 ],
+    "63" : [ 8, "GPE", 0, 12, "GIB", 9 ],
+    "18" : [ 2, "IOB", 0, 5, "GIB", 10 ],
+    "150" : [ 16, "GIB", 5, 17, "GIB", 2 ],
+    "95" : [ 11, "GIB", 4, 5, "GIB", 7 ],
+    "50" : [ 7, "GPE", 0, 10, "GIB", 9 ],
+    "67" : [ 11, "GIB", 19, 13, "GPE", 5 ],
+    "16" : [ 5, "GIB", 16, 2, "IOB", 6 ],
+    "127" : [ 12, "GIB", 0, 11, "GIB", 6 ],
+    "31" : [ 18, "GIB", 8, 20, "IOB", 1 ],
+    "154" : [ 12, "GIB", 6, 18, "GIB", 3 ],
+    "11" : [ 6, "GIB", 6, 2, "IOB", 1 ],
+    "72" : [ 13, "GPE", 0, 10, "GIB", 10 ],
+    "143" : [ 17, "GIB", 1, 16, "GIB", 4 ],
+    "43" : [ 5, "GIB", 20, 7, "GPE", 5 ],
+    "99" : [ 4, "GIB", 2, 5, "GIB", 2 ],
+    "87" : [ 14, "GPE", 0, 18, "GIB", 6 ],
+    "104" : [ 12, "GIB", 4, 6, "GIB", 4 ],
+    "40" : [ 4, "GIB", 10, 7, "GPE", 0 ],
+    "26" : [ 16, "GIB", 11, 19, "IOB", 6 ],
+    "158" : [ 17, "GIB", 7, 18, "GIB", 1 ],
+    "55" : [ 6, "GIB", 11, 8, "GPE", 5 ],
+    "114" : [ 16, "GIB", 2, 10, "GIB", 8 ],
+    "139" : [ 10, "GIB", 6, 16, "GIB", 0 ],
+    "23" : [ 17, "GIB", 18, 19, "IOB", 3 ],
+    "8" : [ 1, "IOB", 0, 4, "GIB", 6 ],
+    "75" : [ 13, "GPE", 0, 17, "GIB", 9 ],
+    "119" : [ 5, "GIB", 7, 11, "GIB", 4 ],
+    "58" : [ 12, "GIB", 9, 8, "GPE", 3 ],
+    "82" : [ 18, "GIB", 6, 14, "GPE", 3 ],
+    "151" : [ 18, "GIB", 0, 17, "GIB", 6 ],
+    "36" : [ 17, "GIB", 16, 20, "IOB", 6 ],
+    "146" : [ 11, "GIB", 10, 17, "GIB", 4 ],
+    "30" : [ 17, "GIB", 13, 20, "IOB", 0 ],
+    "51" : [ 7, "GPE", 0, 11, "GIB", 12 ],
+    "19" : [ 2, "IOB", 0, 6, "GIB", 6 ],
+    "107" : [ 5, "GIB", 4, 6, "GIB", 1 ],
+    "4" : [ 4, "GIB", 8, 1, "IOB", 4 ],
+    "126" : [ 10, "GIB", 5, 11, "GIB", 2 ],
+    "136" : [ 11, "GIB", 6, 12, "GIB", 0 ],
+    "79" : [ 12, "GIB", 12, 14, "GPE", 5 ],
+    "94" : [ 11, "GIB", 3, 5, "GIB", 6 ],
+    "131" : [ 6, "GIB", 4, 12, "GIB", 4 ],
+    "47" : [ 11, "GIB", 13, 7, "GPE", 7 ],
+    "15" : [ 6, "GIB", 8, 2, "IOB", 5 ],
+    "68" : [ 16, "GIB", 6, 13, "GPE", 2 ],
+    "62" : [ 8, "GPE", 0, 11, "GIB", 13 ],
+    "90" : [ 10, "GIB", 2, 4, "GIB", 5 ],
+    "111" : [ 4, "GIB", 5, 10, "GIB", 2 ],
+    "122" : [ 17, "GIB", 4, 11, "GIB", 10 ],
+    "83" : [ 18, "GIB", 7, 14, "GPE", 7 ],
+    "100" : [ 6, "GIB", 0, 5, "GIB", 3 ]
+  },
+  "iob_ag_nest_levels" : 5,
+  "max_blk_cfg_bits" : 190
+}

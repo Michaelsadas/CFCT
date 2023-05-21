@@ -1,0 +1,3 @@
+void* cgra_din_addr[9] = {A0, A1, A2, A3, A4, A5, A6, A7, Mean};
+void* cgra_dout_addr[1] = {res};
+cgra_execute(cgra_din_addr, cgra_dout_addr);

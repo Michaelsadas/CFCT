@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/pigfly/chipyard/generators/cdnn/hardware-generator/src/main/scala/dsa/util/ALU.scala:71:13: reassignment to val[0m
+[0m[[0m[31merror[0m] [0m[0m  shift_rec = recFNFromFN(opa.expWidth, opa.sigWidth, shift_fn)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

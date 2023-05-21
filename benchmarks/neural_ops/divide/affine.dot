@@ -1,0 +1,26 @@
+Digraph G {
+Input1[opcode=input, ref_name="A1", size=4, offset="0, 0", pattern="4, 25"];
+Output1[opcode=output, ref_name="B1", size=100, offset="0, 0", pattern="4, 25"];
+I2F1[opcode=tofloat];
+F2I1[opcode=toint];
+MUL2[opcode=fmul];
+MUL3[opcode=fmul];
+MUL4[opcode=fmul];
+SUB1[opcode=fsub];
+SUB2[opcode=fsub];
+CONST1[opcode=const, value=1073741824];
+CONST2[opcode=const, value=1325263088];
+Input1->I2F1[operand=0];
+I2F1->SUB1[operand=1];
+CONST2->SUB1[operand=0];
+SUB1->F2I1[operand=0];
+F2I1->MUL2[operand=0];
+CONST1->MUL2[operand=1];
+F2I1->MUL3[operand=0];
+F2I1->MUL3[operand=1];
+MUL3->MUL4[operand=0];
+Input1->MUL4[operand=1];
+MUL2->SUB2[operand=0];
+MUL4->SUB2[operand=1];
+SUB2->Output1[operand=0];
+}

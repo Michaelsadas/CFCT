@@ -1,0 +1,127 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "Input5",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 11, 82, 11, -1032, 11, -712, 11",
+      "ref_name": "A0",
+      "size": "5202"
+    },
+    {
+      "_gvid": 1,
+      "name": "Input7",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 11, 2, 11, -240, 11, -240, 11",
+      "ref_name": "W00",
+      "size": "242"
+    },
+    {
+      "_gvid": 2,
+      "name": "MUL8",
+      "label": "\\N",
+      "opcode": "mul"
+    },
+    {
+      "_gvid": 3,
+      "name": "Input11",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "2, 11, 2, 11, -240, 11, -240, 11",
+      "ref_name": "W10",
+      "size": "242"
+    },
+    {
+      "_gvid": 4,
+      "name": "MUL12",
+      "label": "\\N",
+      "opcode": "mul"
+    },
+    {
+      "_gvid": 5,
+      "name": "Output32",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "sstore",
+      "pattern": "242, 2, -240, 121",
+      "ref_name": "B0",
+      "serial": "2, 121, 2, 1",
+      "size": "484"
+    },
+    {
+      "_gvid": 6,
+      "name": "ACC66",
+      "acc_first": "1",
+      "acc_params": "0, 121, 1, 121",
+      "label": "\\N",
+      "opcode": "acc"
+    },
+    {
+      "_gvid": 7,
+      "name": "ACC68",
+      "acc_first": "1",
+      "acc_params": "0, 121, 1, 121",
+      "label": "\\N",
+      "opcode": "acc"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 2,
+      "operand": "1"
+    },
+    {
+      "_gvid": 1,
+      "tail": 0,
+      "head": 4,
+      "operand": "1"
+    },
+    {
+      "_gvid": 2,
+      "tail": 1,
+      "head": 2,
+      "operand": "0"
+    },
+    {
+      "_gvid": 3,
+      "tail": 2,
+      "head": 7,
+      "operand": "0"
+    },
+    {
+      "_gvid": 4,
+      "tail": 3,
+      "head": 4,
+      "operand": "0"
+    },
+    {
+      "_gvid": 5,
+      "tail": 4,
+      "head": 6,
+      "operand": "0"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 5,
+      "operand": "1"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 5,
+      "operand": "0"
+    }
+  ]
+}

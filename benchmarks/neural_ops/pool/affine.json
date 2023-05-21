@@ -1,0 +1,586 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "Input9",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A0",
+      "size": "6050"
+    },
+    {
+      "_gvid": 1,
+      "name": "Input11",
+      "label": "\\N",
+      "offset": "0, 2",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A0",
+      "size": "6050"
+    },
+    {
+      "_gvid": 2,
+      "name": "Input13",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A0",
+      "size": "6050"
+    },
+    {
+      "_gvid": 3,
+      "name": "MAX14",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 4,
+      "name": "MAX15",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 5,
+      "name": "Input18",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A1",
+      "size": "6050"
+    },
+    {
+      "_gvid": 6,
+      "name": "Input20",
+      "label": "\\N",
+      "offset": "0, 2",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A1",
+      "size": "6050"
+    },
+    {
+      "_gvid": 7,
+      "name": "Input22",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A1",
+      "size": "6050"
+    },
+    {
+      "_gvid": 8,
+      "name": "MAX23",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 9,
+      "name": "MAX24",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 10,
+      "name": "Input27",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A2",
+      "size": "6050"
+    },
+    {
+      "_gvid": 11,
+      "name": "Input29",
+      "label": "\\N",
+      "offset": "0, 2",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A2",
+      "size": "6050"
+    },
+    {
+      "_gvid": 12,
+      "name": "Input31",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A2",
+      "size": "6050"
+    },
+    {
+      "_gvid": 13,
+      "name": "MAX32",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 14,
+      "name": "MAX33",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 15,
+      "name": "Input36",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A3",
+      "size": "6050"
+    },
+    {
+      "_gvid": 16,
+      "name": "Input38",
+      "label": "\\N",
+      "offset": "0, 2",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A3",
+      "size": "6050"
+    },
+    {
+      "_gvid": 17,
+      "name": "Input40",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A3",
+      "size": "6050"
+    },
+    {
+      "_gvid": 18,
+      "name": "MAX41",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 19,
+      "name": "MAX42",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 20,
+      "name": "Input45",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A4",
+      "size": "6050"
+    },
+    {
+      "_gvid": 21,
+      "name": "Input47",
+      "label": "\\N",
+      "offset": "0, 2",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A4",
+      "size": "6050"
+    },
+    {
+      "_gvid": 22,
+      "name": "Input49",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A4",
+      "size": "6050"
+    },
+    {
+      "_gvid": 23,
+      "name": "MAX50",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 24,
+      "name": "MAX51",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 25,
+      "name": "Input54",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A5",
+      "size": "6050"
+    },
+    {
+      "_gvid": 26,
+      "name": "Input56",
+      "label": "\\N",
+      "offset": "0, 2",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A5",
+      "size": "6050"
+    },
+    {
+      "_gvid": 27,
+      "name": "Input58",
+      "label": "\\N",
+      "offset": "0, 4",
+      "opcode": "input",
+      "pattern": "110, 3, -216, 27, -104, 27",
+      "ref_name": "A5",
+      "size": "6050"
+    },
+    {
+      "_gvid": 28,
+      "name": "MAX59",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 29,
+      "name": "MAX60",
+      "label": "\\N",
+      "opcode": "fmax"
+    },
+    {
+      "_gvid": 30,
+      "name": "Output87",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 2, 27, 2, 27",
+      "ref_name": "R0",
+      "size": "1458"
+    },
+    {
+      "_gvid": 31,
+      "name": "Output88",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 2, 27, 2, 27",
+      "ref_name": "R1",
+      "size": "1458"
+    },
+    {
+      "_gvid": 32,
+      "name": "Output89",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 2, 27, 2, 27",
+      "ref_name": "R2",
+      "size": "1458"
+    },
+    {
+      "_gvid": 33,
+      "name": "Output90",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 2, 27, 2, 27",
+      "ref_name": "R3",
+      "size": "1458"
+    },
+    {
+      "_gvid": 34,
+      "name": "Output91",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 2, 27, 2, 27",
+      "ref_name": "R4",
+      "size": "1458"
+    },
+    {
+      "_gvid": 35,
+      "name": "Output92",
+      "label": "\\N",
+      "offset": "0, 0",
+      "opcode": "output",
+      "pattern": "0, 3, 2, 27, 2, 27",
+      "ref_name": "R5",
+      "size": "1458"
+    },
+    {
+      "_gvid": 36,
+      "name": "FAMAX224",
+      "acc_first": "1",
+      "acc_params": "0, 3, 1, 729",
+      "label": "\\N",
+      "opcode": "famax"
+    },
+    {
+      "_gvid": 37,
+      "name": "FAMAX226",
+      "acc_first": "1",
+      "acc_params": "0, 3, 1, 729",
+      "label": "\\N",
+      "opcode": "famax"
+    },
+    {
+      "_gvid": 38,
+      "name": "FAMAX228",
+      "acc_first": "1",
+      "acc_params": "0, 3, 1, 729",
+      "label": "\\N",
+      "opcode": "famax"
+    },
+    {
+      "_gvid": 39,
+      "name": "FAMAX230",
+      "acc_first": "1",
+      "acc_params": "0, 3, 1, 729",
+      "label": "\\N",
+      "opcode": "famax"
+    },
+    {
+      "_gvid": 40,
+      "name": "FAMAX232",
+      "acc_first": "1",
+      "acc_params": "0, 3, 1, 729",
+      "label": "\\N",
+      "opcode": "famax"
+    },
+    {
+      "_gvid": 41,
+      "name": "FAMAX234",
+      "acc_first": "1",
+      "acc_params": "0, 3, 1, 729",
+      "label": "\\N",
+      "opcode": "famax"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 3,
+      "operand": "0"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 4,
+      "operand": "1"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 3,
+      "operand": "1"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 4,
+      "operand": "0"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 41,
+      "operand": "0"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 8,
+      "operand": "0"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 9,
+      "operand": "1"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 8,
+      "operand": "1"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 9,
+      "operand": "0"
+    },
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 40,
+      "operand": "0"
+    },
+    {
+      "_gvid": 10,
+      "tail": 10,
+      "head": 13,
+      "operand": "0"
+    },
+    {
+      "_gvid": 11,
+      "tail": 11,
+      "head": 14,
+      "operand": "1"
+    },
+    {
+      "_gvid": 12,
+      "tail": 12,
+      "head": 13,
+      "operand": "1"
+    },
+    {
+      "_gvid": 13,
+      "tail": 13,
+      "head": 14,
+      "operand": "0"
+    },
+    {
+      "_gvid": 14,
+      "tail": 14,
+      "head": 39,
+      "operand": "0"
+    },
+    {
+      "_gvid": 15,
+      "tail": 15,
+      "head": 18,
+      "operand": "0"
+    },
+    {
+      "_gvid": 16,
+      "tail": 16,
+      "head": 19,
+      "operand": "1"
+    },
+    {
+      "_gvid": 17,
+      "tail": 17,
+      "head": 18,
+      "operand": "1"
+    },
+    {
+      "_gvid": 18,
+      "tail": 18,
+      "head": 19,
+      "operand": "0"
+    },
+    {
+      "_gvid": 19,
+      "tail": 19,
+      "head": 38,
+      "operand": "0"
+    },
+    {
+      "_gvid": 20,
+      "tail": 20,
+      "head": 23,
+      "operand": "0"
+    },
+    {
+      "_gvid": 21,
+      "tail": 21,
+      "head": 24,
+      "operand": "1"
+    },
+    {
+      "_gvid": 22,
+      "tail": 22,
+      "head": 23,
+      "operand": "1"
+    },
+    {
+      "_gvid": 23,
+      "tail": 23,
+      "head": 24,
+      "operand": "0"
+    },
+    {
+      "_gvid": 24,
+      "tail": 24,
+      "head": 37,
+      "operand": "0"
+    },
+    {
+      "_gvid": 25,
+      "tail": 25,
+      "head": 28,
+      "operand": "0"
+    },
+    {
+      "_gvid": 26,
+      "tail": 26,
+      "head": 29,
+      "operand": "1"
+    },
+    {
+      "_gvid": 27,
+      "tail": 27,
+      "head": 28,
+      "operand": "1"
+    },
+    {
+      "_gvid": 28,
+      "tail": 28,
+      "head": 29,
+      "operand": "0"
+    },
+    {
+      "_gvid": 29,
+      "tail": 29,
+      "head": 36,
+      "operand": "0"
+    },
+    {
+      "_gvid": 30,
+      "tail": 36,
+      "head": 35,
+      "operand": "0"
+    },
+    {
+      "_gvid": 31,
+      "tail": 37,
+      "head": 34,
+      "operand": "0"
+    },
+    {
+      "_gvid": 32,
+      "tail": 38,
+      "head": 33,
+      "operand": "0"
+    },
+    {
+      "_gvid": 33,
+      "tail": 39,
+      "head": 32,
+      "operand": "0"
+    },
+    {
+      "_gvid": 34,
+      "tail": 40,
+      "head": 31,
+      "operand": "0"
+    },
+    {
+      "_gvid": 35,
+      "tail": 41,
+      "head": 30,
+      "operand": "0"
+    }
+  ]
+}
