@@ -42,12 +42,6 @@ object cdnnSpec{
   val spad_bank_lg_size = 13     // log2(single scratchpad bank size in byts)
   val spad_cfg_lg_size = 12      // log2(config scratchpad size in byts)
   val cgra_iob_sram_banks_coalesce = 4 // coalescing sram banks that CGRA IOB can access
-//  val cgra_cfg_sram_banks_cascade = 2 // cascading sram banks that CGRA config controller can access
-//  val cgra_gib_connect_flexibility = mutable.Map(
-//    "num_itrack_per_ipin" -> 2, // ipin number = 2
-//    "num_otrack_per_opin" -> 2, // opin number = 1
-//    "num_ipin_per_opin"   -> 4
-//  )
   val attrs: mutable.Map[String, Any] = mutable.Map(
     // 1. CGRA Controller parameters
     // 1.1. CGRA Global parameters
@@ -60,11 +54,9 @@ object cdnnSpec{
     // 1.2. GPE attributes (default for all)
 //    "cgra_gpe_num_rf_reg" -> 1,
     "rs_cmd_queue_depth" -> 4,
-//    "cgra_fpe_operations" -> ListBuffer("FPASS", "FADD", "FMUL", "FACC", "FMAX", "FAMAX", "FLSHR"),
     "cgra_fpe_operations" -> ListBuffer("PASS", "FADD", "FMUL", "FACC", "FSUB", "FMIN", "FMAX", "FAMAX", "FMAC", "FSHL", "TOINT", "TOFLOAT"),
-//    "cgra_spe_operations" -> ListBuffer("PASS", "ADD", "ACC", "MAC"),
     "cgra_spe_operations" -> ListBuffer("ADD", "MAC"),
-    "cgra_gpe_max_delay" -> 4, //20, //10,
+    "cgra_gpe_max_delay" -> 4, 
     "cgra_gpe_in_from_dir" -> List(NORTHWEST, NORTHEAST, SOUTHWEST, SOUTHEAST),
     "cgra_gpe_out_to_dir" -> List(NORTHWEST, NORTHEAST, SOUTHWEST, SOUTHEAST),
     // 1.3. GIB attributes (default for all)

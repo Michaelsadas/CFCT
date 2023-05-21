@@ -1,0 +1,94 @@
+#include <stdint.h>
+#include <stddef.h>
+#include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
+#ifndef BAREMETAL
+#include <sys/mman.h>
+#endif
+#include "include/rocc.h"
+#include "include/ISA.h"
+
+void cgra_execute(void** din_addr, void** dout_addr)
+{
+	unsigned short int cin[38][3] __attribute__((aligned(8))) = {
+		{0x0000, 0x0080, 0x0004},
+		{0x0000, 0x0000, 0x0005},
+		{0x0510, 0x0102, 0x0006},
+		{0x0180, 0x1040, 0x0008},
+		{0x0081, 0x0000, 0x0009},
+		{0x0010, 0x0000, 0x000a},
+		{0x0000, 0x0080, 0x000c},
+		{0x0000, 0x0000, 0x000d},
+		{0x0510, 0x0102, 0x000e},
+		{0x0000, 0x0000, 0x0018},
+		{0x0000, 0x0000, 0x001c},
+		{0x1000, 0x0200, 0x0020},
+		{0x0000, 0x0000, 0x0024},
+		{0x0001, 0x0000, 0x002c},
+		{0x0403, 0x0000, 0x002d},
+		{0x0001, 0x0000, 0x0030},
+		{0x0803, 0x0000, 0x0031},
+		{0x0000, 0x0000, 0x0034},
+		{0x0401, 0x0000, 0x0035},
+		{0x0001, 0x0000, 0x0038},
+		{0x0c03, 0x0000, 0x0039},
+		{0x0000, 0x0000, 0x0044},
+		{0x2000, 0x0200, 0x0048},
+		{0x0000, 0x0000, 0x004c},
+		{0x0001, 0x0000, 0x0058},
+		{0x0803, 0x0000, 0x0059},
+		{0x0700, 0x0000, 0x006c},
+		{0x0300, 0x0000, 0x0070},
+		{0x2401, 0x0000, 0x0081},
+		{0x0001, 0x0000, 0x0084},
+		{0x0403, 0x0000, 0x0085},
+		{0x0000, 0x0200, 0x0094},
+		{0x0000, 0x0200, 0x0098},
+		{0x0300, 0x0000, 0x00bc},
+		{0x8000, 0x0000, 0x00c0},
+		{0x0000, 0x0080, 0x00d0},
+		{0x0000, 0x0000, 0x00d1},
+		{0x0a10, 0x0263, 0x00d2},
+	};
+
+	load_cfg(cin, 0x1000, 228, 0, 0);
+	load_data(din_addr[0], 0x400, 256, 0, 0);
+	load_data(din_addr[1], 0x0, 256, 0, 0);
+	load_data(din_addr[2], 0x200, 256, 0, 0);
+	config(0x0, 38, 0, 0);
+	execute(0x27, 0, 0);
+	store(dout_addr[0], 0x800, 256, 0, 0);
+}
+
+
+int main(){
+#ifndef BAREMETAL
+    if (mlockall(MCL_CURRENT | MCL_FUTURE) != 0) {
+      perror("mlockall failed");
+      exit(1);
+    }
+#endif
+
+    int NUM = 64;
+    unsigned int A[NUM] __attribute__((aligned(8)));
+    unsigned int B[NUM] __attribute__((aligned(8)));
+    unsigned int Addr[NUM] __attribute__((aligned(8)));
+    unsigned int C[NUM] __attribute__((aligned(8)));
+    
+    for(int i = 0; i < NUM; i++){
+        Addr[i] = 4*i;
+        A[i] = i+1;
+        B[i] = 2*i;
+    }
+
+    void* din_addr[3] = {A, B, Addr};
+    void* dout_addr[1] = {C};
+    cgra_execute(din_addr, dout_addr);
+    printf("Here comes the result: (output)\n");
+    for(int i = 0; i < NUM; i++){
+        printf("%d\n", C[i]); // 3*i+1
+    }
+
+    return 0;
+}

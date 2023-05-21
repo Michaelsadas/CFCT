@@ -1,0 +1,221 @@
+#include <stdio.h>
+#include "include/ISA.h"
+#include "include/encoding.h"
+#define TYPE int
+#define N 30
+#define M 6
+
+TYPE A1[N];
+TYPE A2[N]; 
+TYPE A3[N];
+TYPE A4[N];
+TYPE A5[N];
+TYPE A6[N];
+TYPE B_transpose[M][N];
+TYPE C1[M];
+TYPE C2[M]; 
+TYPE C3[M];
+TYPE C4[M];
+TYPE C5[M];
+TYPE C6[M];
+TYPE D1[M];
+TYPE D2[M]; 
+TYPE D3[M];
+TYPE D4[M];
+TYPE D5[M];
+TYPE D6[M];
+
+static
+void init_array()
+{
+    int i, j;
+    for (i = 0; i < N; i++)
+    {
+        A1[i] = (TYPE) ((i + 1) % N);
+        A2[i] = (TYPE) ((i + 2) % N);
+        A3[i] = (TYPE) ((i + 3) % N);
+        A4[i] = (TYPE) ((i + 4) % N);
+        A5[i] = (TYPE) ((i + 5) % N);
+        A6[i] = (TYPE) ((i + 6) % N);
+        for (j = 0; j < M; j ++) {
+            B_transpose[j][i] = (TYPE) ((i + j) % N);
+        }
+    }
+}
+
+static
+void matmul()
+{
+    int i, j;
+    int s1, s2, s3, s4, s5, s6;
+    for (i = 0; i < M; i++) {
+        s1 = 0;
+        s2 = 0;
+        s3 = 0;
+        s4 = 0;
+        s5 = 0;
+        s6 = 0;
+        for (j = 0; j < N; j++) {
+            //please_map_me();
+            s1 += A1[j] * B_transpose[i][j];
+            s2 += A2[j] * B_transpose[i][j];
+            s3 += A3[j] * B_transpose[i][j];
+            s4 += A4[j] * B_transpose[i][j];
+            s5 += A5[j] * B_transpose[i][j];
+            s6 += A6[j] * B_transpose[i][j];
+        }
+        D1[i] = s1;
+        D2[i] = s2;
+        D3[i] = s3;
+        D4[i] = s4;
+        D5[i] = s5;
+        D6[i] = s6;  
+    }
+}
+
+void cgra_execute(void** din_addr, void** dout_addr)
+{
+	volatile unsigned short cin[93][3] __attribute__((aligned(8))) = {
+		{0x1800, 0x7800, 0x0004},
+		{0x0040, 0x0030, 0x0005},
+		{0x0000, 0x8d00, 0x0006},
+		{0x0080, 0x0000, 0x0007},
+		{0x2800, 0x7800, 0x0008},
+		{0xf8c0, 0x0037, 0x0009},
+		{0x0000, 0x0100, 0x000a},
+		{0x0000, 0x0000, 0x000b},
+		{0x1000, 0x7800, 0x000c},
+		{0x0040, 0x0030, 0x000d},
+		{0x0000, 0x8b00, 0x000e},
+		{0x0080, 0x0000, 0x000f},
+		{0x2000, 0x7800, 0x0010},
+		{0xf8c0, 0x0037, 0x0011},
+		{0x0000, 0x0100, 0x0012},
+		{0x0000, 0x0000, 0x0013},
+		{0x3000, 0x7800, 0x0014},
+		{0xf8c0, 0x0037, 0x0015},
+		{0x0000, 0x0100, 0x0016},
+		{0x0000, 0x0000, 0x0017},
+		{0x2800, 0x7800, 0x0018},
+		{0x0040, 0x0030, 0x0019},
+		{0x0000, 0x0100, 0x001a},
+		{0x0000, 0x0000, 0x001b},
+		{0x2000, 0x7800, 0x001c},
+		{0xf8c0, 0x0037, 0x001d},
+		{0x0000, 0x0100, 0x001e},
+		{0x0000, 0x0000, 0x001f},
+		{0x1800, 0x7800, 0x0020},
+		{0x0040, 0x0030, 0x0021},
+		{0x0000, 0x8b00, 0x0022},
+		{0x0080, 0x0000, 0x0023},
+		{0x0000, 0x0000, 0x002c},
+		{0x1000, 0x0000, 0x0030},
+		{0x8000, 0x0000, 0x0034},
+		{0x1000, 0x0002, 0x0038},
+		{0x0400, 0x0000, 0x003c},
+		{0x0400, 0x0000, 0x0040},
+		{0x0000, 0x0000, 0x0048},
+		{0x2011, 0x0000, 0x0051},
+		{0x0000, 0x4004, 0x0052},
+		{0x01e1, 0x0006, 0x0053},
+		{0x1043, 0x0001, 0x0055},
+		{0x2011, 0x0000, 0x0059},
+		{0x0000, 0x0004, 0x005a},
+		{0x01e1, 0x0006, 0x005b},
+		{0x1003, 0x0001, 0x005d},
+		{0x9003, 0x0000, 0x0061},
+		{0x9003, 0x0000, 0x0065},
+		{0x3011, 0x0000, 0x0069},
+		{0x0000, 0x0004, 0x006a},
+		{0x01e1, 0x0006, 0x006b},
+		{0x0000, 0x0200, 0x0084},
+		{0x0000, 0x0600, 0x0088},
+		{0x0000, 0x0000, 0x008c},
+		{0x0300, 0x0000, 0x00cc},
+		{0x0000, 0x0600, 0x00d0},
+		{0x1011, 0x0000, 0x00f1},
+		{0x0000, 0x0004, 0x00f2},
+		{0x01e1, 0x0006, 0x00f3},
+		{0x1000, 0x0200, 0x0114},
+		{0x8c00, 0x0000, 0x0118},
+		{0x2011, 0x0000, 0x0135},
+		{0x0000, 0x4004, 0x0136},
+		{0x01e1, 0x0006, 0x0137},
+		{0x3043, 0x0001, 0x0139},
+		{0xc043, 0x0000, 0x013d},
+		{0x3011, 0x0000, 0x0141},
+		{0x0000, 0x4004, 0x0142},
+		{0x01e1, 0x0006, 0x0143},
+		{0x0000, 0x0000, 0x0158},
+		{0x0310, 0x0000, 0x015c},
+		{0x0000, 0x0000, 0x0164},
+		{0x0000, 0x7800, 0x0178},
+		{0x0040, 0x0030, 0x0179},
+		{0x0000, 0x8d00, 0x017a},
+		{0x0080, 0x0000, 0x017b},
+		{0x2800, 0x7800, 0x017c},
+		{0xf8c0, 0x0037, 0x017d},
+		{0x0000, 0x0100, 0x017e},
+		{0x0000, 0x0000, 0x017f},
+		{0x1000, 0x7800, 0x0180},
+		{0x0040, 0x0030, 0x0181},
+		{0x0000, 0x8b00, 0x0182},
+		{0x0000, 0x0000, 0x0183},
+		{0x1800, 0x7800, 0x0184},
+		{0x0040, 0x0030, 0x0185},
+		{0x0000, 0x8d00, 0x0186},
+		{0x0080, 0x0000, 0x0187},
+		{0x2000, 0x7800, 0x0188},
+		{0xf8c0, 0x0037, 0x0189},
+		{0x0000, 0x0100, 0x018a},
+		{0x0000, 0x0000, 0x018b},
+	};
+
+	load_cfg((void*)cin, 0x20000, 558, 1);
+	load_data(din_addr[0], 0x8000, 120, 0, 1);
+	load_data(din_addr[1], 0x0, 120, 0, 1);
+	load_data(din_addr[2], 0xc000, 120, 0, 1);
+	load_data(din_addr[3], 0x2000, 120, 0, 1);
+	load_data(din_addr[4], 0x18000, 120, 0, 1);
+	load_data(din_addr[5], 0x1a000, 120, 0, 1);
+	load_data(din_addr[6], 0xa000, 720, 0, 1);
+	config(0x0, 93, 1);
+	execute(0xf8ff, 1);
+	store(dout_addr[0], 0xe000, 24, 1);
+	store(dout_addr[1], 0x4000, 24, 1);
+	store(dout_addr[2], 0x1c000, 24, 1);
+	store(dout_addr[3], 0x6000, 24, 1);
+	store(dout_addr[4], 0x1e000, 24, 1);
+	store(dout_addr[5], 0x10000, 24, 1);
+}
+
+void result_check()
+{
+    for(int i = 0; i < M; i++){
+        if(C1[i] != D1[i]) printf("There is an error in C1[%d]\n", i);
+        if(C2[i] != D2[i]) printf("There is an error in C1[%d]\n", i);
+        if(C3[i] != D3[i]) printf("There is an error in C1[%d]\n", i);
+        if(C4[i] != D4[i]) printf("There is an error in C1[%d]\n", i);
+        if(C5[i] != D5[i]) printf("There is an error in C1[%d]\n", i);
+        if(C6[i] != D6[i]) printf("There is an error in C1[%d]\n", i);
+    }
+    printf("done.\n");
+}
+
+int main(){
+    long long unsigned start, end;
+    init_array();
+    start = rdcycle();
+    matmul();
+    end = rdcycle();
+    printf("It takes %d cycles to finish the task via CPU.\n", end - start);
+    start = rdcycle();
+    void* cgra_din_addr[7] = {A1, A2, A3, A4, A5, A6, B_transpose};
+    void* cgra_dout_addr[6] = {C1, C2, C3, C4, C5, C6};
+    cgra_execute(cgra_din_addr, cgra_dout_addr);
+    int result = fence(1);
+    end = rdcycle();
+    printf("It takes %d cycles to finish the task via CGRA.\n", end - start);
+    result_check();
+    return 0;
+}
