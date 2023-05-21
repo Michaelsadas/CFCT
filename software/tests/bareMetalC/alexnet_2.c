@@ -14,6 +14,11 @@
 #define OC 256
 //#define OC 8
 
+    short int A[IC][IH][IW] __attribute__((aligned(8)));
+    short int B[OC + 2][OH + 1][OW] __attribute__((aligned(8)));
+	short int Zero[OH][OW] __attribute__((aligned(8)));
+    short int W[OC + 2][IC][KH][KW] __attribute__((aligned(8)));
+
 void cgra_config(){
 	volatile unsigned short cin[454][3] __attribute__((aligned(8))) = {
 		{0x6000, 0x2800, 0x0008},
@@ -514,16 +519,11 @@ void cgra_execute(void** din_addr, void** dout_addr, int load_en)
 }
 
 int main(){
-    short int A[IC][IH][IW] __attribute__((aligned(8)));
-    short int B[OC + 2][OH + 1][OW] __attribute__((aligned(8)));
-    //short int R[OC][OH][OW] __attribute__((aligned(8)));
-	short int Zero[OH][OW] __attribute__((aligned(8)));
-    //int Zero[OH + 1][OW] __attribute__((aligned(8)));
-    short int W[OC + 2][IC][KH][KW] __attribute__((aligned(8)));
+
     for (int ic = 0; ic < IC; ic ++ ){
         for (int h = 0; h < IH; h = h + 1 ) {
             for (int w = 0; w < IW; w = w + 1 ) {
-                A[ic][h][w] = (h + w) % 10 - 4;
+                A[ic][h][w] = rand(10) - 4;
             }
         }
     }
@@ -532,7 +532,7 @@ int main(){
         for (int oc = 0; oc < OC; oc ++){
             for (int h = 0; h < KH; h = h + 1){
                 for (int w = 0; w < KW; w = w + 1){
-                    W[oc][ic][h][w] = h + w;
+                    W[oc][ic][h][w] = rand(10);
                 }
             }
         }
@@ -605,32 +605,31 @@ int main(){
     end = rdcycle();
     printf("It takes %d cycles for CGRA to finish the task(%d)\n", end - start, result);
 
-    //start = rdcycle();
-    //for (int oc = 0; oc < OC; oc ++) {
-    //    for (int ic = 0; ic < IC; ic ++) {
-    //        for (int h = 0; h < OH; h ++) {
-    //            for (int w = 0; w < OW; w ++) {
-    //                for (int kh = 0; kh < KH; kh ++) {
-    //                    for (int kw = 0; kw < KW; kw ++) {
-    //                        //#ifdef CGRA_COMPILER
-    //                        //please_map_me();
-    //                       R[oc][h][w] += A[ic][h * SH + kh][w * SW + kw] * W[oc][ic][kh][kw];
-	//        	            //#endif
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
-    //}
-    //end = rdcycle();
-    //printf("It takes %d cycles for CPU to finish the task.\n", end - start);
-
-    //for (int oc = 0; oc < OC; oc ++){
-    //    for (int h = 0; h < OH; h = h + 1) {
-    //        for (int w = 0; w < OW; w = w + 1) {
-    //            printf("Data in location (%d, %d, %d) is %d\n", oc, h, w, B[oc][h][w]);
-    //        }
-    //    }
-    //}
+    start = rdcycle();
+    for (int oc = 0; oc < OC; oc ++) {
+        for (int ic = 0; ic < IC; ic ++) {
+            for (int h = 0; h < OH; h ++) {
+                for (int w = 0; w < OW; w ++) {
+                    for (int kh = 0; kh < KH; kh ++) {
+                        for (int kw = 0; kw < KW; kw ++) {
+                            //#ifdef CGRA_COMPILER
+                            //please_map_me();
+                           R[oc][h][w] += A[ic][h * SH + kh][w * SW + kw] * W[oc][ic][kh][kw];
+	        	            //#endif
+                        }
+                    }
+                }
+            }
+        }
+    }
+    end = rdcycle();
+    printf("It takes %d cycles for CPU to finish the task.\n", end - start);
+    for (int oc = 0; oc < OC; oc ++){
+        for (int h = 0; h < OH; h = h + 1) {
+            for (int w = 0; w < OW; w = w + 1) {
+                printf("Data in location (%d, %d, %d) is %d\n", oc, h, w, B[oc][h][w]);
+            }
+        }
+    }
     printf("done!(%d)\n", B[0][0][0]);
 }

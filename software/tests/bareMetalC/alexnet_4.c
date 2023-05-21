@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "include/ISA.h"
 #include "include/encoding.h"
 #define IH 15
@@ -9,11 +10,14 @@
 #define KW 3
 #define SH 1
 #define SW 1
-//#define IC 64
 #define IC 384
-//#define OC 5
 #define OC 384
 #define TYPE short int
+
+TYPE A[IC][IH][IW] __attribute__((aligned(8)));
+TYPE B[OC + 3][OH + 3][OW] __attribute__((aligned(8)));
+TYPE Zero[OH][OW] __attribute__((aligned(8)));
+TYPE W[OC + 3][IC][KH][KW] __attribute__((aligned(8)));
 
 void cgra_config(){
 	volatile unsigned short cin[455][3] __attribute__((aligned(8))) = {
@@ -518,16 +522,10 @@ void cgra_execute(void** din_addr, void** dout_addr, int load_en)
 
 
 int main(){
-	TYPE A[IC][IH][IW] __attribute__((aligned(8)));
-	TYPE B[OC + 3][OH + 3][OW] __attribute__((aligned(8)));
-	//TYPE R[OC][OH][OW] __attribute__((aligned(8)));
-	TYPE Zero[OH][OW] __attribute__((aligned(8)));
-	TYPE W[OC + 3][IC][KH][KW] __attribute__((aligned(8)));
-
     for (int ic = 0; ic < IC; ic ++ ){
         for (int h = 0; h < IH; h = h + 1 ) {
             for (int w = 0; w < IW; w = w + 1 ) {
-                A[ic][h][w] = (h + w + ic) % 10 - 5;
+                A[ic][h][w] = rand(10) - 5;
             }
         }
     }
@@ -536,7 +534,7 @@ int main(){
         for (int oc = 0; oc < OC; oc ++){
             for (int h = 0; h < KH; h = h + 1){
                 for (int w = 0; w < KW; w = w + 1){
-                    W[oc][ic][h][w] = h + w;
+                    W[oc][ic][h][w] = rand(10);
                 }
             }
         }
