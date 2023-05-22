@@ -68,17 +68,23 @@ The parameters are specified in the file CDNN/hardware-generator/src/main/scala/
 Some of the important parameters are explained as following:
 
 cgra_num_row: The row number of the PEs
+
 cgra_num_column: The column number of the PEs
 
 cgra_data_width: The data width
+
 cgra_cfg_data_width: The width of the configuration data
 
 cgra_fpe_operations: The operations supported in the fpe. 
+
 cgra_spe_operations: The operations supported in the spe. 
 
 cgra_gpe_in_from_dir: High-level description of CGRA topology.
+
 cgra_gpe_out_to_dir: High-level description of CGRA topology.
+
 cgra_gib_num_track: num of the tracks of GIB.
+
 cgra_gib_connect_flexibility: High-level description of CGRA topology.
 
 
