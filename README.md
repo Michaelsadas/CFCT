@@ -7,7 +7,7 @@ Template-based Reconfigurable Architecture Modeling Framework, including:
 
 2. cgra-mapper: CGRA mapper, mapping DFGs to CGRA in batches. The mapping flow includes placement and routing, data synchronization, optimization, visualization, and configuration generation.
 
-3. fronted-compiler: automatically extracting the computing kernels in C language, and output a DFG file that can be recognized by cgra-mapper. 
+3. fronted-compiler: LLVM-based compiler, which automatically extracts the computing kernels in C language, and outputs a DFG file that can be recognized by cgra-mapper. 
 
 4. Benchmarks: DFGs of multiple DNN computing kernels in Json format derived from dot files.
 
@@ -76,8 +76,6 @@ cgra_cfg_data_width: The width of the configuration data
 cgra_fpe_operations: The operations supported in the fpe. 
 cgra_spe_operations: The operations supported in the spe. 
 
-(currently we designs two kinds of PEs, fpe can handle data type of int and float while spe can only solve data type of int, users can specify their own PEs. The supported operations library is listed in CDNN/hardware-generator/src/main/scala/op/Operations.scala)
-
 cgra_gpe_in_from_dir: High-level description of CGRA topology
 cgra_gpe_out_to_dir: High-level description of CGRA topology
 cgra_gib_num_track: num of the tracks of GIB
@@ -97,7 +95,7 @@ step4: Choose your own logic name in 'cgra_fpe_operations' or 'cgra_spe_operatio
 
 
 ### How to generate DFG and call functions for target DNN computing kernels?
-Design the DNN computing kernels in C language and put it to CDNN/fronted-compiler/applications and generate the DFG files according to the README.md in CDNN/fronted-compiler/
+Design the DNN computing kernels in C language, put it to CDNN/fronted-compiler/applications and generate the DFG files according to the README.md in CDNN/fronted-compiler/
 
 Then, run the cgra-mapper. The corresponding configuration data and call function will be generated in the same directory of DFG. The call function is composed of series of instructions including configuration, data transmission and execution.
 
