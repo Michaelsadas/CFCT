@@ -1134,7 +1134,7 @@ int main(){
 	void* cgra_din_addr[20];
 	void* cgra_dout_addr[10];
 	for(int ic = 0; ic < IC; ic ++){
-		for(int h = 0; h < OH; h = h + 14){
+		for(int h = 0; h < OH / 14; h ++){
 			for(int oc = 0; oc < OC; oc = oc + 8){				
 				cgra_din_addr[0] = &A[ic][h * 56][0];
 				cgra_din_addr[1] = &A[ic][h * 56][32];
