@@ -105,3 +105,17 @@ Design the DNN computing kernels in C language, put it to CDNN/fronted-compiler/
 
 Then, run the cgra-mapper. The corresponding configuration data and call function will be generated in the same directory of DFG. The call function is composed of series of instructions including configuration, data transmission and execution.
 
+### Two examples:
+1. CDNN-S: simple version supporting linear functions
+2. CDNN-C: complex version supporting nonlinear functions & floating-point
+
+We test the performance and power efficiency of CDNN-S and CDNN-C with different sizes on benchmark Convolution and Nomalization repectively.
+
+CDNN-S with different sizes on benchmark Convolution
+Size	Runtime(ms)	Power(mw)	Power efficiency(ms.W)
+3x6	10.74	0.350	3.76
+4x9	5.33	0.565	3.04
+5x12	3.37	0.837	2.83
+6x18	2.09	1.263	2.64
+7x24	1.48	1.878	2.78
+
