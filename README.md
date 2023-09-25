@@ -106,11 +106,21 @@ We test the performance and power efficiency of CDNN-S and CDNN-C with different
 
 CDNN-S with different sizes on benchmark Convolution
 
-Size	| Runtime(ms)	| Power(mw)	| efficiency(ms.W)
+Size	| Runtime(ms)	| Power(mw)	| Efficiency(ms.W)
 |------|------|------|------|
 3x6	| 10.74	| 0.350	| 3.76
 4x9	| 5.33	| 0.565	| 3.04
 5x12	| 3.37	| 0.837	| 2.83
 6x18	| 2.09	| 1.263	| 2.64
 7x24	| 1.48	| 1.878	| 2.78
+
+CDNN-C with different sizes on benchmark Nomalization
+
+Size | Runtime(ms) | Power(mW) | Efficiency(ms.W)
+|-----|-----|-----|-----|
+3x6 | 2.09 | 0.391 | 0.817
+4x9 | 1.43 | 0.621 | 0.888
+5x12 | 0.885 | 0.884 | 0.783
+6x18 | 0.523 | 1.41 | 0.737
+7x24 | 0.402 | 2.00 | 0.804
 
