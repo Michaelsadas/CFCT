@@ -114,6 +114,7 @@ We test the performance and power efficiency of CDNN-S and CDNN-C with different
 CDNN-S with different sizes on benchmark Convolution
 
 Size	| Runtime(ms)	| Power(mw)	| efficiency(ms.W)
+|------|------|------|------|
 3x6	| 10.74	| 0.350	| 3.76
 4x9	| 5.33	| 0.565	| 3.04
 5x12	| 3.37	| 0.837	| 2.83
