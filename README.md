@@ -98,6 +98,20 @@ Design the DNN computing kernels in C language, put it to CDNN/fronted-compiler/
 
 Then, run the cgra-mapper. The corresponding configuration data and call function will be generated in the same directory of DFG. The call function is composed of series of instructions including configuration, data transmission and execution.
 
+## Benchmark and examples
+### Benchmark kernels
+We select seven different computing kernels from different neural networks as our benchmark.
+
+Kernel | Description
+|-----|-----|
+Convolution | AlexNet: convolution layer1
+PWC | MobileNetV1: first PWC
+DWC | MobileNetV1: first DWC
+Full connect | AlexNet: FC layer1
+Normalization | BERT-BASE: LN in layer1
+Softmax | AlexNet: output layer
+AlexNet | output layer
+
 ### Two examples:
 1. CDNN-S: simple version supporting linear functions
 2. CDNN-C: complex version supporting nonlinear functions & floating-point
