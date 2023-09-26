@@ -63,7 +63,7 @@ The generated result files are in the same directory as the benchmark.
 
 ### How to design your own hardware?
 
-CDNN provides a large amount of parameters that can be changed in the design-time to meet the demand of different accelerators.
+CDNN provides in total 43 parameters that can be changed in the design-time to meet the demand of different accelerators.
 The parameters are specified in the file CDNN/hardware-generator/src/main/scala/spec/CDNNSpec.scala. 
 Some of the important parameters are explained as following:
 
