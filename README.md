@@ -1,4 +1,4 @@
-CDNN Framework
+CFCT Framework
 =======================
 
 Template-based Reconfigurable Architecture Modeling Framework, including:
